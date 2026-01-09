@@ -33,30 +33,30 @@ const SolutionSelector = () => {
     ];
 
     return (
-        <section className="py-32 bg-white/30 relative overflow-hidden">
+        <section className="py-20 bg-white/30 relative overflow-hidden">
             <div className="container px-4 relative z-10">
-                <div className="text-center mb-24">
-                    <h2 className="font-display text-5xl md:text-8xl mb-6 tracking-tight">Choose Your Solution</h2>
+                <div className="text-center mb-16">
+                    <h2 className="font-display text-4xl md:text-6xl mb-4 tracking-tight">Choose Your Solution</h2>
                     <p className="text-muted-foreground text-xl max-w-2xl mx-auto font-medium leading-relaxed">
                         Strategic advertising channels engineered for maximum hyperlocal impact.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {solutions.map((solution, index) => (
                         <div
                             key={index}
-                            className={`group relative bg-white/80 backdrop-blur-3xl rounded-[3rem] p-12 shadow-card border border-black/5 hover:border-primary/40 transition-all duration-700 flex flex-col hover:-translate-y-4`}
+                            className="group relative bg-white/80 backdrop-blur-3xl rounded-3xl p-8 shadow-sm border border-black/5 hover:border-primary/40 transition-all duration-500 flex flex-col hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.01]"
                         >
-                            <div className={`absolute inset-0 bg-gradient-to-br from-${solution.color}/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-[3rem]`} />
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
 
-                            <h3 className="font-display text-5xl mb-10 tracking-tight">{solution.title}</h3>
+                            <h3 className="font-display text-4xl mb-6 tracking-tight">{solution.title}</h3>
 
-                            <ul className="space-y-6 mb-16 flex-grow">
+                            <ul className="space-y-4 mb-10 flex-grow">
                                 {solution.features.map((feature, i) => (
-                                    <li key={i} className="flex items-center gap-5 text-lg">
-                                        <div className={`w-10 h-10 rounded-[0.8rem] bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-all duration-500`}>
-                                            <Check className={`w-6 h-6 text-primary`} />
+                                    <li key={i} className="flex items-center gap-4 text-base">
+                                        <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-all duration-300">
+                                            <Check className="w-5 h-5 text-primary" />
                                         </div>
                                         <span className="text-foreground/80 font-medium">{feature}</span>
                                     </li>
@@ -64,11 +64,11 @@ const SolutionSelector = () => {
                             </ul>
 
                             <Button
-                                className={`w-full h-18 rounded-2xl text-xl font-bold transition-all duration-500 shadow-2xl group-hover:scale-[1.02] bg-primary hover:bg-primary/90 text-white shadow-primary/20`}
+                                className="w-full h-14 rounded-xl text-lg font-bold transition-all duration-300 shadow-lg group-hover:scale-[1.01] bg-primary hover:bg-primary/90 text-white shadow-primary/20"
                                 size="lg"
                                 onClick={() => navigate(solution.link)}
                             >
-                                {solution.cta} <ArrowRight className="ml-2 w-7 h-7" />
+                                {solution.cta} <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </div>
                     ))}

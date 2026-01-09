@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['"Bebas Neue"', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Outfit', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

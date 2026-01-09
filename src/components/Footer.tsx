@@ -1,6 +1,8 @@
 import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -25,9 +27,9 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-xl text-secondary-foreground mb-6">About</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-secondary-foreground/70 hover:text-primary transition-colors">Our Story</a></li>
-              <li><a href="#" className="text-secondary-foreground/70 hover:text-primary transition-colors">Careers</a></li>
-              <li><a href="#" className="text-secondary-foreground/70 hover:text-primary transition-colors">Privacy Policy</a></li>
+              <li><Link to="/our-story" className="text-secondary-foreground/70 hover:text-primary transition-colors">Our Story</Link></li>
+              <li><Link to="/careers" className="text-secondary-foreground/70 hover:text-primary transition-colors">Careers</Link></li>
+              <li><Link to="/privacy-policy" className="text-secondary-foreground/70 hover:text-primary transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
