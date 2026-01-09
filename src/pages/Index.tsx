@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>AutoAds - Hyperlocal Advertising Solutions</title>
+        <title>ADZO - Premium Hyperlocal Advertising</title>
         <meta
           name="description"
           content="Reach thousands daily through Auto Advertising or QR-based Deal Discovery. The best hyperlocal advertising platform in India."
