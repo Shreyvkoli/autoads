@@ -78,26 +78,29 @@ const AboutContact = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-foreground">+91 98765 43210</span>
+                  <div className="flex flex-col">
+                    <span className="text-foreground">+91 79775 68891 (Primary)</span>
+                    <span className="text-muted-foreground text-sm">+91 84509 12498 (Alt)</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-foreground">hello@autoads.in</span>
+                  <span className="text-foreground">adzo.co.team@gmail.com</span>
                 </div>
               </div>
 
               {/* Quick Contact Buttons */}
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild variant="cta" size="lg" className="gap-2">
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">
+                  <a href="https://wa.me/917977568891" target="_blank" rel="noreferrer">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp Us
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="gap-2">
-                  <a href="tel:+919876543210">
+                  <a href="tel:+917977568891">
                     <Phone className="w-5 h-5" />
                     Call Now
                   </a>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Smartphone, CarFront } from "lucide-react";
+import { ArrowRight, Smartphone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -33,7 +33,25 @@ const Hero = () => {
 
             <div className="relative z-10 w-full flex flex-col items-center h-full">
               <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-all duration-500 shadow-sm">
-                <CarFront className="w-10 h-10 text-primary" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-10 h-10 text-primary"
+                >
+                  <circle cx="7" cy="17" r="3" />
+                  <circle cx="17" cy="17" r="3" />
+                  <path d="M10 17h4" />
+                  <path d="M20 17h2" />
+                  <path d="M2 17h2" />
+                  <path d="M14 17V8a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v9" />
+                  <path d="M14 8h3l3 5v4" />
+                  <path d="M14 8v9" />
+                </svg>
               </div>
 
               <h3 className="font-display text-3xl mb-4 tracking-wide text-foreground">Auto Advertising</h3>

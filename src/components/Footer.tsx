@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
-                <a href="mailto:hello@adzo.in" className="hover:text-primary transition-colors font-medium">hello@adzo.in</a>
+                <a href="mailto:adzo.co.team@gmail.com" className="hover:text-primary transition-colors font-medium">adzo.co.team@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -55,8 +55,10 @@ const Footer = () => {
           {/* CTA */}
           <div>
             <h4 className="font-display text-xl text-foreground mb-8 tracking-wide">Get Started</h4>
-            <Button className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2 mb-4 h-12 rounded-xl text-base font-bold shadow-button hover:-translate-y-1 transition-all duration-300">
-              <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
+            <Button asChild className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2 mb-4 h-12 rounded-xl text-base font-bold shadow-button hover:-translate-y-1 transition-all duration-300">
+              <a href="https://wa.me/917977568891" target="_blank" rel="noreferrer">
+                <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
+              </a>
             </Button>
             <p className="text-sm text-muted-foreground font-medium">
               Response time: Usually within 1 hour

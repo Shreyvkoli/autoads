@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
                     </section>
 
                     <section className="bg-muted p-8 rounded-2xl text-center">
-                        <p className="text-xl font-medium">📧 For any privacy concerns: <a href="mailto:privacy@yourbrand.in" className="text-primary hover:underline">privacy@yourbrand.in</a></p>
+                        <p className="text-xl font-medium">📧 For any privacy concerns: <a href="mailto:adzo.co.team@gmail.com" className="text-primary hover:underline">adzo.co.team@gmail.com</a></p>
                     </section>
                 </div>
             </main>

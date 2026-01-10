@@ -151,7 +151,7 @@ const QrDeals = () => {
                     <div className="container px-4 relative z-10 text-center max-w-[1000px] mx-auto">
                         <h2 className="text-4xl md:text-6xl font-display mb-8 text-white tracking-wide">READY TO SCALE?</h2>
 
-                        <Button size="lg" variant="secondary" className="h-16 px-12 rounded-2xl text-xl font-bold bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all" onClick={() => window.open('https://wa.me/919999999999', '_blank')}>
+                        <Button size="lg" variant="secondary" className="h-16 px-12 rounded-2xl text-xl font-bold bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all" onClick={() => window.open('https://wa.me/917977568891', '_blank')}>
                             Talk to Sales <ArrowRight className="ml-2 w-6 h-6" />
                         </Button>
                     </div>

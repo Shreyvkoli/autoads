@@ -44,7 +44,7 @@ const Careers = () => {
                     </section>
 
                     <section className="bg-muted p-8 rounded-2xl text-center">
-                        <p className="text-xl font-medium mb-2">📩 Email: <a href="mailto:careers@yourbrand.in" className="text-primary hover:underline">careers@yourbrand.in</a></p>
+                        <p className="text-xl font-medium mb-2">📩 Email: <a href="mailto:adzo.co.team@gmail.com" className="text-primary hover:underline">adzo.co.team@gmail.com</a></p>
                         <p className="text-muted-foreground">(Resume + short introduction)</p>
                     </section>
                 </div>
