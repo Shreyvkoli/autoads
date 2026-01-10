@@ -1,4 +1,4 @@
-import { MessageCircle, Mail, MapPin, Megaphone } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Megaphone, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import { Link } from "react-router-dom";
@@ -13,10 +13,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-orange-600 rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-                <Megaphone className="w-6 h-6 text-white transform -rotate-12" />
+              <div className="bg-gradient-to-br from-gray-900 to-black p-3 rounded-xl shadow-lg border border-white/10 w-fit overflow-hidden">
+                <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain scale-125" />
               </div>
-              <span className="font-display text-3xl text-foreground tracking-wide">ADZO</span>
             </div>
             <p className="text-muted-foreground mb-8 text-base leading-relaxed">
               Hyperlocal advertising solutions for modern brands in Mumbai.
@@ -54,12 +53,26 @@ const Footer = () => {
 
           {/* CTA */}
           <div>
-            <h4 className="font-display text-xl text-foreground mb-8 tracking-wide">Get Started</h4>
-            <Button asChild className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2 mb-4 h-12 rounded-xl text-base font-bold shadow-button hover:-translate-y-1 transition-all duration-300">
-              <a href="https://api.whatsapp.com/send?phone=917977568891" target="_blank" rel="noreferrer">
-                <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
+            <h4 className="font-display text-xl text-foreground mb-8 tracking-wide">Contact Us Anytime</h4>
+            <div className="flex flex-col gap-3 mb-4">
+              <a href="https://api.whatsapp.com/send?phone=917977568891" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 p-4 rounded-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                <div className="w-10 h-10 bg-[#25D366]/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <MessageCircle className="w-5 h-5 text-[#25D366]" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground group-hover:text-[#25D366] transition-colors">+91 79775 68891</p>
+                </div>
               </a>
-            </Button>
+
+              <a href="https://api.whatsapp.com/send?phone=918450912498" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/20 p-4 rounded-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-lg cursor-pointer">
+                <div className="w-10 h-10 bg-[#25D366]/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Phone className="w-5 h-5 text-[#25D366]" />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground group-hover:text-[#25D366] transition-colors">+91 84509 12498</p>
+                </div>
+              </a>
+            </div>
             <p className="text-sm text-muted-foreground font-medium">
               Response time: Usually within 1 hour
             </p>

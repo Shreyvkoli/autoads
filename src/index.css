@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 24 100% 50%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 98%;
@@ -32,14 +32,14 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 24 100% 50%;
+    --ring: 199 89% 48%;
 
     --radius: 1rem;
 
     /* Custom AutoAds colors */
-    --orange-glow: 24 100% 50%;
-    --orange-light: 30 100% 60%;
-    --orange-dark: 20 100% 45%;
+    --blue-glow: 199 89% 48%;
+    --blue-light: 199 89% 60%;
+    --blue-dark: 199 89% 45%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
 
@@ -52,8 +52,8 @@
     --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.02), 0 2px 4px -2px rgb(0 0 0 / 0.02);
     --shadow-card-hover: 0 20px 40px -4px rgb(0 0 0 / 0.08);
     /* Softer, premium shadow */
-    --shadow-glow: 0 0 60px hsl(24 100% 50% / 0.15);
-    --shadow-button: 0 8px 16px -4px hsl(24 100% 50% / 0.3);
+    --shadow-glow: 0 0 60px hsl(199 89% 48% / 0.15);
+    --shadow-button: 0 8px 16px -4px hsl(199 89% 48% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -75,7 +75,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 24 100% 50%;
+    --primary: 199 89% 48%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -92,7 +92,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 24 100% 50%;
+    --ring: 199 89% 48%;
   }
 }
 
@@ -156,7 +156,7 @@
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, #ff7e33 100%);
+    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, #38bdf8 100%);
   }
 
   .glass-card {
@@ -233,11 +233,11 @@
 
   0%,
   100% {
-    box-shadow: 0 0 20px hsl(24 100% 50% / 0.4);
+    box-shadow: 0 0 20px hsl(199 89% 48% / 0.4);
   }
 
   50% {
-    box-shadow: 0 0 40px hsl(24 100% 50% / 0.6);
+    box-shadow: 0 0 40px hsl(199 89% 48% / 0.6);
   }
 }
 

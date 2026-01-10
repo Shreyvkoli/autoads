@@ -79,8 +79,8 @@ const AboutContact = () => {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-foreground">+91 79775 68891 (Primary)</span>
-                    <span className="text-muted-foreground text-sm">+91 84509 12498 (Alt)</span>
+                    <span className="text-foreground">+91 79775 68891</span>
+                    <span className="text-muted-foreground text-sm">+91 84509 12498</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
