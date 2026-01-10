@@ -94,7 +94,7 @@ const AboutContact = () => {
               {/* Quick Contact Buttons */}
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild variant="cta" size="lg" className="gap-2">
-                  <a href="https://wa.me/917977568891" target="_blank" rel="noreferrer">
+                  <a href="https://api.whatsapp.com/send?phone=917977568891" target="_blank" rel="noreferrer">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp Us
                   </a>

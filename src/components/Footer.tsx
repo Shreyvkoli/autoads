@@ -56,7 +56,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-xl text-foreground mb-8 tracking-wide">Get Started</h4>
             <Button asChild className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2 mb-4 h-12 rounded-xl text-base font-bold shadow-button hover:-translate-y-1 transition-all duration-300">
-              <a href="https://wa.me/917977568891" target="_blank" rel="noreferrer">
+              <a href="https://api.whatsapp.com/send?phone=917977568891" target="_blank" rel="noreferrer">
                 <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
               </a>
             </Button>

@@ -112,7 +112,7 @@ const AutoAds = () => {
                             Our network consists only of verified autos committed to active campaigns.
                         </p>
 
-                        <Button size="lg" variant="secondary" className="h-16 px-12 rounded-2xl text-xl font-bold bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all" onClick={() => window.open('https://wa.me/917977568891', '_blank')}>
+                        <Button size="lg" variant="secondary" className="h-16 px-12 rounded-2xl text-xl font-bold bg-white text-primary hover:bg-white/90 shadow-2xl hover:shadow-white/20 hover:scale-105 transition-all" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
                             Talk to us <ArrowRight className="ml-2 w-6 h-6" />
                         </Button>
                         <p className="mt-8 text-white/80 font-medium text-base tracking-wide">👉 Stop guessing. Start knowing.</p>
