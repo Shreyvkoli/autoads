@@ -13,8 +13,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gradient-to-br from-gray-900 to-black p-3 rounded-xl shadow-lg border border-white/10 w-fit overflow-hidden">
-                <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain scale-125" />
+              <div className="bg-gradient-to-br from-gray-900 to-black p-4 rounded-xl shadow-lg border border-white/10 w-fit overflow-hidden">
+                <img src="/adzo-logo.png" alt="ADZO" className="h-12 w-auto object-contain" />
               </div>
             </div>
             <p className="text-muted-foreground mb-8 text-base leading-relaxed">

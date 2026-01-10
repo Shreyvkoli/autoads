@@ -13,8 +13,8 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl border-b border-white/20 shadow-sm">
             <div className="container px-4 max-w-[1200px] mx-auto h-20 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-3 group">
-                    <div className="bg-gradient-to-br from-gray-900 to-black p-2 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300 border border-white/10 overflow-hidden">
-                        <img src="/adzo-logo.png" alt="ADZO" className="h-8 w-auto object-contain scale-125" />
+                    <div className="bg-gradient-to-br from-gray-900 to-black p-2 px-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300 border border-white/10 overflow-hidden">
+                        <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain" />
                     </div>
                 </Link>
 
