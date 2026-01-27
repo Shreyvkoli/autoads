@@ -11,7 +11,7 @@ const AutoAds = () => {
 
             <main className="flex-grow pt-20 relative z-10">
                 {/* Hero Section */}
-                <section className="py-24 relative overflow-hidden bg-white/50">
+                <section className="py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute inset-0 bg-hero-gradient opacity-30" />
                     <div className="container px-4 text-center relative z-10 max-w-[1000px] mx-auto">
                         <h1 className="text-5xl md:text-6xl font-display mb-8 tracking-wide text-foreground">Auto Advertising</h1>
@@ -22,7 +22,7 @@ const AutoAds = () => {
                 </section>
 
                 {/* Comparison Section */}
-                <section className="py-24 border-y border-white/20 bg-white/30 backdrop-blur-sm">
+                <section className="py-24 border-y border-white/20 bg-white/60 backdrop-blur-md">
                     <div className="container px-4 max-w-[1200px] mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-display mb-6 tracking-wide text-foreground">Normal Ads vs. ADZO</h2>
@@ -77,7 +77,7 @@ const AutoAds = () => {
                 </section>
 
                 {/* Our Auto Advertising Model */}
-                <section className="py-24 bg-white/30 relative">
+                <section className="py-24 bg-white/60 backdrop-blur-md relative">
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/40 to-transparent" />
                     <div className="container px-4 max-w-[1200px] mx-auto relative z-10">
                         <h2 className="text-3xl md:text-4xl font-display text-center mb-6 tracking-wide text-foreground">OUR ADVERTISING MODEL</h2>

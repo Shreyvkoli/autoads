@@ -123,6 +123,11 @@ export default {
           },
         },
       },
+      backgroundImage: {
+        'hero-gradient': "var(--gradient-hero)",
+        'card-gradient': "var(--gradient-card)",
+        'shine-gradient': "var(--gradient-shine)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

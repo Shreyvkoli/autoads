@@ -4,20 +4,15 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 
 const Layout = () => {
     return (
-        <BackgroundGradientAnimation
-            gradientBackgroundStart="rgb(253, 251, 247)"
-            gradientBackgroundEnd="rgb(245, 245, 220)"
-            firstColor="255, 248, 231"
-            secondColor="250, 240, 230"
-            thirdColor="250, 235, 215"
-            fourthColor="255, 228, 196"
-            fifthColor="255, 235, 205"
-            pointerColor="222, 184, 135"
-        >
-            <div className="relative z-10 w-full min-h-screen">
+        <div className="relative min-h-screen overflow-hidden">
+            {/* Global Background Blobs - Applied to all pages */}
+            <div className="fixed top-0 right-0 w-[800px] h-[800px] bg-blue-200/20 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/4" />
+            <div className="fixed bottom-0 left-0 w-[600px] h-[600px] bg-purple-200/20 rounded-full blur-[100px] -z-10 -translate-x-1/3 translate-y-1/4" />
+
+            <div className="relative z-10 w-full">
                 <Outlet />
             </div>
-        </BackgroundGradientAnimation>
+        </div>
     );
 };
 

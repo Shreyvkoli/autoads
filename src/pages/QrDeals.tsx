@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Video, BarChart2, Zap, ArrowRight } from "lucide-react";
+import qrDealMockup from "@/assets/qr-deal-mockup.jpg";
 
 
 const QrDeals = () => {
@@ -11,7 +12,7 @@ const QrDeals = () => {
 
             <main className="flex-grow pt-20 relative z-10">
                 {/* Hero Section */}
-                <section className="py-24 relative overflow-hidden bg-white/50">
+                <section className="py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute inset-0 bg-hero-gradient opacity-30" />
                     <div className="container px-4 text-center relative z-10 max-w-[1000px] mx-auto">
                         <h1 className="text-5xl md:text-6xl font-display mb-8 tracking-wide text-foreground">QR Deal Marketing</h1>
@@ -22,7 +23,7 @@ const QrDeals = () => {
                 </section>
 
                 {/* Why QR Deal Marketing Converts */}
-                <section className="py-24 border-y border-white/20 bg-white/30 backdrop-blur-sm">
+                <section className="py-24 border-y border-white/20 bg-white/60 backdrop-blur-md">
                     <div className="container px-4 max-w-[1200px] mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-display mb-4 tracking-wide text-foreground">Why QR Deal Marketing Converts</h2>
@@ -56,13 +57,11 @@ const QrDeals = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
                                 <div className="relative z-10 w-full max-w-[280px] bg-black rounded-[2.5rem] h-[520px] border-8 border-gray-900 shadow-2xl overflow-hidden flex flex-col transform group-hover:scale-105 transition-transform duration-500">
                                     {/* Mock Phone UI */}
-                                    <div className="flex-grow bg-gray-900 relative group-hover:bg-gray-800 transition-colors duration-500 flex items-center justify-center">
-                                        <Video className="w-16 h-16 text-white/20" />
-                                        <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
-                                            <div className="w-3/4 h-3 bg-white/20 rounded-full mb-3" />
-                                            <div className="w-1/2 h-3 bg-white/20 rounded-full" />
-                                        </div>
-                                    </div>
+                                    <img
+                                        src={qrDealMockup}
+                                        alt="App Interface"
+                                        className="flex-grow w-full h-full object-cover"
+                                    />
                                     <div className="h-16 bg-black flex items-center justify-center border-t border-white/10">
                                         <Button size="sm" className="rounded-full px-6 bg-primary hover:bg-primary/90 text-sm h-10 font-bold">Get Deal</Button>
                                     </div>

@@ -6,93 +6,49 @@
 
 @layer base {
   :root {
-    --background: 40 30% 98%;
-    --foreground: 222 47% 11%;
+    /* Premium Professional Light Theme - Marble Style */
+    --background: 0 0% 100%;
+    /* Pure White */
+    --foreground: 222.2 84% 4.9%;
+    /* Deep Slate Black */
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 199 89% 48%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 221.2 83.2% 53.3%;
+    /* Professional Royal Blue */
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 98%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 215.3 19.3% 34.5%;
+    /* Slate 600 */
 
     --accent: 210 40% 96.1%;
-    --accent-foreground: 222 47% 11%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 199 89% 48%;
+    --ring: 221.2 83.2% 53.3%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    /* Custom AutoAds colors */
-    --blue-glow: 199 89% 48%;
-    --blue-light: 199 89% 60%;
-    --blue-dark: 199 89% 45%;
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
+    /* Restored Light Marble Gradient */
+    --gradient-hero: linear-gradient(to bottom right, #eff6ff, #e0e7ff, #f3e8ff);
+    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
 
-    /* Modern Gradients */
-    --gradient-hero: linear-gradient(135deg, #fdfbf7 0%, #fff7ed 100%);
-    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
-    --gradient-dark: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
-    /* Enhanced Shadows */
-    --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.02), 0 2px 4px -2px rgb(0 0 0 / 0.02);
-    --shadow-card-hover: 0 20px 40px -4px rgb(0 0 0 / 0.08);
-    /* Softer, premium shadow */
-    --shadow-glow: 0 0 60px hsl(199 89% 48% / 0.15);
-    --shadow-button: 0 8px 16px -4px hsl(199 89% 48% / 0.3);
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 199 89% 48%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 199 89% 48%;
+    /* Elegant Light Shadows */
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-card-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.01);
+    --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.1);
   }
 }
 
@@ -116,34 +72,33 @@
     line-height: 1.6;
   }
 
-  /* Typography Scale */
   h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(40px, 5vw, 48px);
-    /* 40px mobile to 48px desktop */
-    line-height: 1.1;
+    font-size: clamp(48px, 6vw, 80px);
+    line-height: 0.95;
     letter-spacing: 0.02em;
+    @apply text-foreground;
   }
 
   h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(30px, 4vw, 36px);
-    /* 30px mobile to 36px desktop */
-    line-height: 1.2;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.1;
     letter-spacing: 0.02em;
+    @apply text-foreground;
   }
 
   h3 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(22px, 3vw, 26px);
-    /* 22px mobile to 26px desktop */
-    line-height: 1.3;
+    font-size: clamp(24px, 4vw, 32px);
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    @apply text-foreground;
   }
 
   p {
-    font-size: clamp(15px, 1.5vw, 17px);
-    line-height: 1.6;
+    font-size: clamp(16px, 1.5vw, 18px);
+    line-height: 1.7;
     @apply text-muted-foreground;
   }
 
@@ -156,48 +111,47 @@
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, #38bdf8 100%);
+    background-image: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
   }
 
   .glass-card {
-    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-lg;
+    @apply bg-white border border-white/20 shadow-xl transition-all duration-300;
+  }
+
+  .glass-card-hover {
+    @apply hover:bg-white/90 hover:shadow-2xl hover:-translate-y-1;
   }
 
   .glass-button {
-    @apply bg-white/90 hover:bg-white text-primary shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-white hover:bg-zinc-100 text-black border border-white/20 shadow-lg transition-all duration-300;
   }
 
-  .shadow-card {
-    box-shadow: var(--shadow-card);
+  /* Modern Shine Effect */
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
   }
 
-  .shadow-card-hover {
-    box-shadow: var(--shadow-card-hover);
+  .shine-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+    pointer-events: none;
   }
 
-  .shadow-button {
-    box-shadow: var(--shadow-button);
-  }
-
-  /* Additional Shadows */
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-
-  .shadow-tech {
-    box-shadow: var(--shadow-tech);
-  }
-
-  .shadow-vibrant {
-    box-shadow: var(--shadow-vibrant);
-  }
-
-  .shadow-cyber {
-    box-shadow: var(--shadow-cyber);
+  .shine-effect:hover::before {
+    left: 200%;
+    transition: 0.7s;
   }
 }
 
-/* Animations */
+/* Updated Animations for Professional Feel */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -221,28 +175,11 @@
 }
 
 .animate-fade-up {
-  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fade-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
-}
-
-/* Other animations can stay or be cleaned if unused, but we'll include common ones */
-@keyframes pulse-glow {
-
-  0%,
-  100% {
-    box-shadow: 0 0 20px hsl(199 89% 48% / 0.4);
-  }
-
-  50% {
-    box-shadow: 0 0 40px hsl(199 89% 48% / 0.6);
-  }
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+  animation: fade-in 0.8s ease-out forwards;
 }
 
 .delay-100 {
@@ -255,12 +192,4 @@
 
 .delay-300 {
   animation-delay: 0.3s;
-}
-
-.delay-400 {
-  animation-delay: 0.4s;
-}
-
-.delay-500 {
-  animation-delay: 0.5s;
 }
