@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-20 px-4 max-w-[1200px] mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <h1 className="font-display text-6xl md:text-8xl leading-[0.9] mb-8 animate-fade-up tracking-tight">
+          <h1 className="font-display text-5xl md:text-8xl leading-[0.9] mb-8 animate-fade-up tracking-tight">
             <span className="text-white drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">ADVERTISE</span> <br />
             <span className="text-gradient font-bold italic">WHERE THE CITY MOVES.</span>
           </h1>
