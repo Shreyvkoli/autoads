@@ -86,21 +86,46 @@ const AutoAds = () => {
                     </div>
                 </section>
 
-                {/* Who This Is Best For */}
-                <section className="py-24 bg-transparent">
-                    <div className="container px-4 max-w-[1200px] mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-display text-center mb-16 tracking-wide text-foreground">WHO THIS IS BEST FOR</h2>
-                        <div className="grid md:grid-cols-3 gap-8">
+                {/* Who This Is Best For - Redesigned */}
+                <section className="py-24 relative overflow-hidden">
+                    {/* Decorative background elements */}
+                    <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
+                    <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl -z-10" />
+
+                    <div className="container px-4 max-w-[1000px] mx-auto relative z-10">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl md:text-5xl font-display mb-6 tracking-wide text-foreground">
+                                Who This Is <span className="text-gradient">Perfect</span> For
+                            </h2>
+                            <p className="text-lg text-muted-foreground font-medium max-w-2xl mx-auto">
+                                Designed for brands that demand accountability, not just visibility.
+                            </p>
+                        </div>
+
+                        <div className="space-y-4">
                             {[
-                                "Brands serious about local visibility",
-                                "Companies who want accountability",
-                                "Businesses with limited budgets but smart thinking",
-                                "Brands that understand trust comes from familiarity",
-                                "Brands tired of traditional auto advertising",
-                                "Auto ads for brands who want consistent local visibility, not random exposure."
+                                "Brands serious about verifying their local visibility",
+                                "Companies demanding 100% accountability",
+                                "Businesses with smart budgets looking for high ROI",
+                                "Brands building trust through consistent neighborhood presence",
+                                "Advertisers tired of 'blind' traditional campaigns",
+                                "Growth-focused teams wanting measurable offline data"
                             ].map((item, index) => (
-                                <div key={index} className="bg-white/70 backdrop-blur-xl p-8 rounded-[1.5rem] border border-white/40 text-center hover:border-primary/40 transition-all duration-300 hover:-translate-y-2 shadow-card hover:shadow-card-hover flex items-center justify-center min-h-[160px] group">
-                                    <h3 className="font-display text-2xl tracking-wide leading-tight text-foreground/90 group-hover:text-primary transition-colors">{item}</h3>
+                                <div
+                                    key={index}
+                                    className="group flex items-center p-6 bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl shadow-sm hover:shadow-xl hover:bg-white/80 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 cursor-default"
+                                >
+                                    <div className="flex-shrink-0 mr-6">
+                                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                            <Check className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                                        </div>
+                                    </div>
+                                    <span className="text-xl md:text-2xl font-display tracking-wide text-foreground/80 group-hover:text-foreground transition-colors">
+                                        {item}
+                                    </span>
+                                    <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-4 group-hover:translate-x-0 hidden md:block">
+                                        <ArrowRight className="w-5 h-5 text-primary/50" />
+                                    </div>
                                 </div>
                             ))}
                         </div>
