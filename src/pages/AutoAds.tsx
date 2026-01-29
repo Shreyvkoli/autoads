@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, ClipboardList, Map, Megaphone, ArrowRight } from "lucide-react";
+import AutoAdReal from "@/assets/auto-ad-rear-view.jpg";
 
 
 const AutoAds = () => {
@@ -11,13 +12,43 @@ const AutoAds = () => {
 
             <main className="flex-grow pt-20 relative z-10">
                 {/* Hero Section */}
-                <section className="py-24 relative overflow-hidden bg-transparent">
+                {/* Hero Section */}
+                <section className="py-12 md:py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute inset-0 bg-hero-gradient opacity-30" />
-                    <div className="container px-4 text-center relative z-10 max-w-[1000px] mx-auto">
-                        <h1 className="text-5xl md:text-6xl font-display mb-8 tracking-wide text-foreground">Auto Advertising</h1>
-                        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-                            High-impact street presence. 100% verified placement. Massive hyperlocal reach.
-                        </p>
+                    <div className="container px-4 relative z-10 mx-auto max-w-[1240px]">
+                        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                            <div className="text-center lg:text-left">
+                                <h1 className="text-5xl md:text-7xl font-display mb-6 tracking-wide text-foreground leading-[0.95]">
+                                    Auto <br className="hidden lg:block" /> Advertising
+                                </h1>
+                                <p className="text-lg md:text-xl text-muted-foreground mb-8 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
+                                    High-impact street presence. 100% verified placement. Massive hyperlocal reach.
+                                </p>
+                            </div>
+
+                            <div className="relative group animate-fade-up delay-200">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-[2rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                                <div className="relative bg-white/10 backdrop-blur-sm p-2 rounded-[2rem] border border-white/40">
+                                    <img
+                                        src={AutoAdReal}
+                                        alt="Auto Ad Real Example"
+                                        className="w-full h-auto rounded-[1.8rem] shadow-2xl transform transition-all duration-700 group-hover:scale-[1.02] group-hover:-rotate-1"
+                                    />
+                                </div>
+                                {/* Floating Badge */}
+                                <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-blue-100 animate-bounce duration-3000 hidden md:block">
+                                    <div className="flex items-center gap-3">
+                                        <div className="bg-green-100 p-2 rounded-full">
+                                            <Check className="w-5 h-5 text-green-600" />
+                                        </div>
+                                        <div>
+                                            <p className="text-sm font-bold text-gray-800">Verified Placement</p>
+                                            <p className="text-xs text-gray-500">Live Tracking Enabled</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
