@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, Video, BarChart2, Zap, ArrowRight } from "lucide-react";
 import qrDealMockup from "@/assets/qr-deal-mockup.jpg";
 
+import adzoQrCode from "@/assets/adzo-qr-code.png";
+
 
 const QrDeals = () => {
     return (
@@ -14,11 +16,23 @@ const QrDeals = () => {
                 {/* Hero Section */}
                 <section className="py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute inset-0 bg-hero-gradient opacity-30" />
-                    <div className="container px-4 text-center relative z-10 max-w-[1000px] mx-auto">
-                        <h1 className="text-5xl md:text-6xl font-display mb-8 tracking-wide text-foreground">QR Deal Marketing</h1>
-                        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-                            Bridging the physical and digital gap. Reels-style engagement for every commute.
-                        </p>
+                    <div className="container px-8 md:px-12 lg:px-20 relative z-10 max-w-[1300px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+                        <div className="text-left pl-4 lg:pl-0">
+                            <h1 className="text-5xl md:text-6xl font-display mb-8 tracking-wide text-foreground leading-tight">QR Deal Marketing</h1>
+                            <p className="text-lg md:text-xl text-muted-foreground mb-10 font-medium leading-relaxed">
+                                Bridging the physical and digital gap. Reels-style engagement for every commute.
+                            </p>
+                        </div>
+                        <div className="flex justify-center lg:justify-end pr-4 lg:pr-0">
+                            <div className="relative group">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-violet-600 rounded-2xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                                <img
+                                    src={adzoQrCode}
+                                    alt="Adzo QR Code"
+                                    className="relative w-[280px] md:w-[320px] h-auto rounded-xl shadow-2xl border-4 border-white/10 bg-white"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </section>
 

@@ -15,9 +15,9 @@ const AutoAds = () => {
                 {/* Hero Section */}
                 <section className="py-12 md:py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute inset-0 bg-hero-gradient opacity-30" />
-                    <div className="container px-4 relative z-10 mx-auto max-w-[1240px]">
-                        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                            <div className="text-center lg:text-left">
+                    <div className="container px-8 md:px-12 lg:px-20 relative z-10 mx-auto max-w-[1300px]">
+                        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                            <div className="text-center lg:text-left pl-4 lg:pl-0">
                                 <h1 className="text-5xl md:text-7xl font-display mb-6 tracking-wide text-foreground leading-[0.95]">
                                     Auto <br className="hidden lg:block" /> Advertising
                                 </h1>
