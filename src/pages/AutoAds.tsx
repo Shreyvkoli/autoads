@@ -120,7 +120,7 @@ const AutoAds = () => {
                                             <Check className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
                                         </div>
                                     </div>
-                                    <span className="text-xl md:text-2xl font-display tracking-wide text-foreground/80 group-hover:text-foreground transition-colors">
+                                    <span className="text-lg md:text-xl font-medium text-foreground/80 group-hover:text-foreground transition-colors">
                                         {item}
                                     </span>
                                     <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-4 group-hover:translate-x-0 hidden md:block">
