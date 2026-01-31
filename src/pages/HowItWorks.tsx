@@ -11,9 +11,19 @@ import {
     HelpCircle,
     CheckCircle2,
     Calculator,
-    Quote
+    Quote,
+    Timer,
+    Ban,
+    Coins,
+    Focus
 } from "lucide-react";
 import React, { useState } from 'react';
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const HowItWorks = () => {
     // ROI Calculator State
@@ -26,14 +36,13 @@ const HowItWorks = () => {
     const engagementRate = 0.05; // 5%
 
     // Calculations
-    const getCostPerAuto = () => {
-        if (packageType === 'starter') return 300;
-        if (packageType === 'growth') return 500;
-        if (packageType === 'qr') return 150; // Approximated per auto equivalent for calculation
-        return 300;
+    const getCostPerMonth = () => {
+        if (packageType === 'qr') return 1500;
+        const pricePerAuto = packageType === 'starter' ? 300 : 500;
+        return autos * pricePerAuto;
     };
 
-    const costPerMonth = autos * getCostPerAuto();
+    const costPerMonth = getCostPerMonth();
     const totalCost = costPerMonth * duration;
 
     const dailyImpressions = autos * impressionsPerAutoDaily;
@@ -200,11 +209,68 @@ const HowItWorks = () => {
 
                                 <div className="bg-white p-4 rounded-xl border border-gray-100 text-center mt-4">
                                     <p className="text-sm font-medium text-foreground">
-                                        "{autos} autos × ₹{getCostPerAuto()} = ₹{costPerMonth.toLocaleString()}/mo <br />
+                                        {packageType === 'qr' ?
+                                            `Fixed campaign cost ≈ ₹${costPerMonth.toLocaleString()}/mo for bulk placement.` :
+                                            `"${autos} autos × ₹${packageType === 'starter' ? 300 : 500} = ₹${costPerMonth.toLocaleString()}/mo`
+                                        }
+                                        <br />
                                         <span className="text-primary font-bold">Thousands of local impressions daily.</span>"
                                     </p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="grid md:grid-cols-4 gap-6 mt-16">
+                            {[
+                                {
+                                    icon: <Timer className="w-8 h-8 text-white" />,
+                                    title: "20+ Mins",
+                                    subtitle: "Dwell Time",
+                                    desc: "Passengers are stuck in traffic with nothing to do but read your ad.",
+                                    color: "bg-blue-500",
+                                    shadow: "shadow-blue-500/20",
+                                    border: "border-blue-200"
+                                },
+                                {
+                                    icon: <Ban className="w-8 h-8 text-white" />,
+                                    title: "No Skip",
+                                    subtitle: "Forced View",
+                                    desc: "Unlike scrolling past ads online, a physical banner cannot be skipped or blocked.",
+                                    color: "bg-rose-500",
+                                    shadow: "shadow-rose-500/20",
+                                    border: "border-rose-200"
+                                },
+                                {
+                                    icon: <MapPin className="w-8 h-8 text-white" />,
+                                    title: "Hyperlocal",
+                                    subtitle: "Precision Targeting",
+                                    desc: "Target the exact 5km radius where your actual customers live and shop.",
+                                    color: "bg-purple-500",
+                                    shadow: "shadow-purple-500/20",
+                                    border: "border-purple-200"
+                                },
+                                {
+                                    icon: <Coins className="w-8 h-8 text-white" />,
+                                    title: "1/10th Cost",
+                                    subtitle: "Massive ROI",
+                                    desc: "Get city-wide visibility for the price of a single billboard.",
+                                    color: "bg-emerald-500",
+                                    shadow: "shadow-emerald-500/20",
+                                    border: "border-emerald-200"
+                                }
+                            ].map((item, i) => (
+                                <div key={i} className={`bg-white p-6 rounded-3xl border ${item.border} relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300`}>
+                                    <div className={`absolute top-0 right-0 w-32 h-32 ${item.color} opacity-5 rounded-full blur-3xl -mr-10 -mt-10 group-hover:opacity-10 transition-opacity`} />
+
+                                    <div className={`${item.color} w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg ${item.shadow} group-hover:scale-110 transition-transform duration-300`}>
+                                        {item.icon}
+                                    </div>
+
+                                    <h3 className="text-3xl font-display text-foreground mb-1">{item.title}</h3>
+                                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">{item.subtitle}</p>
+                                    <p className="text-sm text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
@@ -218,24 +284,30 @@ const HowItWorks = () => {
                             </h2>
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
-                            {[
-                                { q: "How many people will see my ad?", a: "Auto-rickshaws operate 10–14 hours daily and pass through busy routes, giving your brand thousands of impressions every week in your target area." },
-                                { q: "Will I get proof that my ads are running?", a: "Yes. We provide weekly photo verification of your ads on autos." },
-                                { q: "Do people actually scan the QR?", a: "Yes. Passengers are idle during rides and scan when QR shows offers, deals, or rewards. We design placement and messaging to maximize scans." },
-                                { q: "What kind of businesses is ADZO best for?", a: "Restaurants, cafes, salons, gyms, clinics, coaching centers, retail stores, D2C brands, and local services." },
-                                { q: "Can I choose the areas where my ads run?", a: "Yes. We deploy autos in your exact target localities and nearby routes." },
-                                { q: "What is the minimum campaign size?", a: "Minimum 10 autos for meaningful area coverage." },
-                                { q: "Can I run a short trial campaign?", a: "Yes. We recommend starting with a pilot campaign before scaling." },
-                                { q: "What happens if a banner is removed or damaged?", a: "We provide free replacement and reinstallation as part of the service." },
-                                { q: "Do you create the reels for us?", a: "Yes. We provide reel creation support as part of the package or as an add-on." },
-                                { q: "Are there any hidden charges?", a: "No. All pricing is transparent and shared upfront." }
-                            ].map((item, i) => (
-                                <div key={i} className="bg-white/40 p-6 rounded-2xl border border-white/40 hover:bg-white/60 transition-colors">
-                                    <h3 className="font-bold text-lg text-foreground mb-3">{item.q}</h3>
-                                    <p className="text-muted-foreground font-medium leading-relaxed">{item.a}</p>
-                                </div>
-                            ))}
+                        <div className="max-w-[800px] mx-auto">
+                            <Accordion type="single" collapsible className="w-full space-y-4">
+                                {[
+                                    { q: "How many people will see my ad?", a: "Auto-rickshaws operate 10–14 hours daily and pass through busy routes, giving your brand thousands of impressions every week in your target area." },
+                                    { q: "Will I get proof that my ads are running?", a: "Yes. We provide weekly photo verification of your ads on autos so you can track your campaign's deployment." },
+                                    { q: "Do people actually scan the QR?", a: "Yes. Passengers are idle during rides and often scan QR codes that offer value—like discounts, rewards, or interesting content. We help design this to maximize scans." },
+                                    { q: "What kind of businesses is ADZO best for?", a: "It's perfect for hyperlocal businesses like Restaurants, Salons, Gyms, Coaching Centers, Real Estate, and Clinics, as well as D2C brands looking for brand awareness." },
+                                    { q: "Can I choose the areas where my ads run?", a: "Yes. You can select specific localities. We perform 'cluster targeting' to ensure your autos dominate the zones where your customers live." },
+                                    { q: "What is the minimum campaign size?", a: "We recommend a minimum of 10 autos to ensure meaningful visibility and reach in a chosen area." },
+                                    { q: "Can I run a short trial campaign?", a: "Yes. You can start with a 1-month pilot campaign to validate results before scaling up to longer durations." },
+                                    { q: "What happens if a banner is removed or damaged?", a: "We offer a replacement guarantee. If a banner is damaged or removed during the contracted period, we replace it for free." },
+                                    { q: "Do you create the reels for us?", a: "Yes. Our creative team handles the reel creation optimized for auto-travel context (short, engaging, no-sound proof)." },
+                                    { q: "Are there any hidden charges?", a: "None. Our pricing covers printing, installation, mounting, tracking, and reporting. Everything is transparent." }
+                                ].map((item, i) => (
+                                    <AccordionItem key={i} value={`item-${i}`} className="bg-white/60 backdrop-blur-sm border border-white/50 px-6 rounded-2xl data-[state=open]:bg-white/80 transition-all duration-300">
+                                        <AccordionTrigger className="text-xl font-bold font-sans text-foreground hover:no-underline py-5 text-left">
+                                            {item.q}
+                                        </AccordionTrigger>
+                                        <AccordionContent className="text-muted-foreground text-base pb-6 font-medium leading-relaxed">
+                                            {item.a}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))}
+                            </Accordion>
                         </div>
                     </div>
                 </section>
