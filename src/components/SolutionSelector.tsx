@@ -46,7 +46,7 @@ const SolutionSelector = () => {
                     {solutions.map((solution, index) => (
                         <div
                             key={index}
-                            className="group relative bg-white rounded-[2rem] p-6 md:p-10 shadow-lg hover:shadow-xl border border-slate-100 transition-all duration-500 flex flex-col hover:-translate-y-2"
+                            className="group relative bg-white rounded-[2rem] p-4 md:p-10 shadow-lg hover:shadow-xl border border-slate-100 transition-all duration-500 flex flex-col hover:-translate-y-2"
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[2rem]" />
 

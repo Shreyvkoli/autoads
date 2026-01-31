@@ -14,12 +14,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-20 px-4 max-w-[1200px] mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <h1 className="font-display text-5xl md:text-8xl leading-[0.9] mb-8 animate-fade-up tracking-tight">
+          <h1 className="font-display text-5xl md:text-8xl leading-[0.9] mb-8 tracking-tight">
             <span className="text-white drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">ADVERTISE</span> <br />
             <span className="text-gradient font-bold italic">WHERE THE CITY MOVES.</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-slate-700 mb-12 max-w-2xl mx-auto animate-fade-up delay-100 font-light leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-700 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
             Dominate the streets with premium <span className="text-white font-medium drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">Auto Branding</span> and state-of-the-art <span className="text-white font-medium drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">QR Discovery</span>.
           </p>
         </div>

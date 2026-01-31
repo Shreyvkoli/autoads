@@ -51,7 +51,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation Overlay */}
             {isOpen && (
-                <div className="fixed inset-0 z-[60] bg-white flex flex-col p-6 animate-in slide-in-from-right duration-300">
+                <div className="fixed inset-0 z-[100] bg-white h-screen w-screen flex flex-col p-6 animate-in slide-in-from-right duration-300">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center gap-3">
                             <div className="bg-white p-1.5 rounded-lg border border-gray-100 shadow-sm">
