@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Smartphone } from "lucide-react";
+import { ArrowRight, Smartphone, MapPin, Timer, Ban, Coins } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
@@ -15,13 +15,67 @@ const Hero = () => {
       <div className="container relative z-20 px-4 max-w-[1200px] mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h1 className="font-display text-5xl md:text-8xl leading-[0.9] mb-8 tracking-tight">
-            <span className="text-white drop-shadow-[0_5px_5px_rgba(0,0,0,1)]">ADVERTISE</span> <br />
+            <span className="text-black">ADVERTISE</span> <br />
             <span className="text-gradient font-bold italic">WHERE THE CITY MOVES.</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-700 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Dominate the streets with premium <span className="text-white font-medium drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">Auto Branding</span> and state-of-the-art <span className="text-white font-medium drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">QR Discovery</span>.
+            Dominate the streets with premium <span className="text-black font-medium">Auto Branding</span> and state-of-the-art <span className="text-black font-medium">QR Discovery</span>.
           </p>
+
+          {/* Stats Grid - HowItWorks Style */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-20 px-4 md:px-0">
+            {[
+              {
+                icon: <Timer className="w-6 h-6 md:w-8 md:h-8 text-white" />,
+                title: "20+ Mins",
+                subtitle: "Dwell Time",
+                desc: "Passengers are stuck in traffic with nothing to do but read your ad.",
+                color: "bg-blue-500",
+                shadow: "shadow-blue-500/20",
+                border: "border-blue-200"
+              },
+              {
+                icon: <Ban className="w-6 h-6 md:w-8 md:h-8 text-white" />,
+                title: "No Skip",
+                subtitle: "Forced View",
+                desc: "Unlike scrolling past ads online, a physical banner cannot be skipped or blocked.",
+                color: "bg-rose-500",
+                shadow: "shadow-rose-500/20",
+                border: "border-rose-200"
+              },
+              {
+                icon: <MapPin className="w-6 h-6 md:w-8 md:h-8 text-white" />,
+                title: "Hyperlocal",
+                subtitle: "Precision Targeting",
+                desc: "Target the exact 5km radius where your actual customers live and shop.",
+                color: "bg-purple-500",
+                shadow: "shadow-purple-500/20",
+                border: "border-purple-200"
+              },
+              {
+                icon: <Coins className="w-6 h-6 md:w-8 md:h-8 text-white" />,
+                title: "1/10th Cost",
+                subtitle: "Massive ROI",
+                desc: "Get city-wide visibility for the price of a single billboard.",
+                color: "bg-emerald-500",
+                shadow: "shadow-emerald-500/20",
+                border: "border-emerald-200"
+              }
+            ].map((item, i) => (
+              <div key={i} className={`bg-white p-5 md:p-6 rounded-2xl md:rounded-3xl border ${item.border} relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-left`}>
+                <div className={`absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 ${item.color} opacity-5 rounded-full blur-3xl -mr-6 -mt-6 md:-mr-10 md:-mt-10 group-hover:opacity-10 transition-opacity`} />
+
+                <div className={`${item.color} w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg ${item.shadow} group-hover:scale-110 transition-transform duration-300`}>
+                  {item.icon}
+                </div>
+
+                <h3 className="text-xl md:text-3xl font-display text-foreground mb-1">{item.title}</h3>
+                <p className="text-[10px] md:text-xs font-bold text-primary uppercase tracking-wider mb-2 md:mb-3">{item.subtitle}</p>
+                <p className="text-sm text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA Cards */}
