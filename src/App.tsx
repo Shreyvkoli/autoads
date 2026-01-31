@@ -17,6 +17,9 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
+import Pricing from "./pages/Pricing";
+import HowItWorks from "./pages/HowItWorks";
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
@@ -30,6 +33,8 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/auto-ads" element={<AutoAds />} />
               <Route path="/qr-deals" element={<QrDeals />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/our-story" element={<OurStory />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

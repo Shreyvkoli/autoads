@@ -19,10 +19,16 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-6">
                     <Button variant="ghost" className="hidden md:flex text-sm font-medium text-slate-600 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300" asChild>
+                        <Link to="/how-it-works">How It Works</Link>
+                    </Button>
+                    <Button variant="ghost" className="hidden md:flex text-sm font-medium text-slate-600 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300" asChild>
                         <Link to="/auto-ads">Auto Ads</Link>
                     </Button>
                     <Button variant="ghost" className="hidden md:flex text-sm font-medium text-slate-600 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300" asChild>
                         <Link to="/qr-deals">QR Deals</Link>
+                    </Button>
+                    <Button variant="ghost" className="hidden md:flex text-sm font-medium text-slate-600 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300" asChild>
+                        <Link to="/pricing">Pricing</Link>
                     </Button>
                     <Button onClick={scrollToContact} size="sm" className="h-10 px-6 rounded-full font-semibold text-sm shadow-lg shadow-blue-500/30 hover:shadow-blue-600/40 bg-blue-600 text-white hover:bg-blue-700 transition-all hover:-translate-y-0.5">
                         Contact Us
