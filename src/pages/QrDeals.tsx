@@ -2,8 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Smartphone, Video, BarChart2, Zap, ArrowRight } from "lucide-react";
-import qrDealMockup from "@/assets/qr-deal-mockup.jpg";
-
+import qrAutoView from "@/assets/qr-auto-view.jpg";
 import adzoQrCode from "@/assets/adzo-qr-code.png";
 
 
@@ -67,17 +66,16 @@ const QrDeals = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="bg-white/60 backdrop-blur-2xl h-[560px] rounded-[3rem] border border-white/40 flex items-center justify-center p-10 overflow-hidden group shadow-card hover:shadow-card-hover relative transition-all duration-500">
-                                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-                                <div className="relative z-10 w-full max-w-[280px] bg-black rounded-[2.5rem] h-[520px] border-8 border-gray-900 shadow-2xl overflow-hidden flex flex-col transform group-hover:scale-105 transition-transform duration-500">
-                                    {/* Mock Phone UI */}
+                            <div className="relative group perspective-1000">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[2rem] blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                                <div className="relative overflow-hidden rounded-[2rem] shadow-2xl border border-white/30 bg-white/10 backdrop-blur-sm group-hover:scale-[1.02] transition-transform duration-500">
                                     <img
-                                        src={qrDealMockup}
-                                        alt="App Interface"
-                                        className="flex-grow w-full h-full object-cover"
+                                        src={qrAutoView}
+                                        alt="QR Code inside Auto Rickshaw"
+                                        className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-110"
                                     />
-                                    <div className="h-16 bg-black flex items-center justify-center border-t border-white/10">
-                                        <Button size="sm" className="rounded-full px-6 bg-primary hover:bg-primary/90 text-sm h-10 font-bold">Get Deal</Button>
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 pt-16">
+                                        <p className="text-white text-lg font-medium">Real-world placement. Zero distractions.</p>
                                     </div>
                                 </div>
                             </div>
