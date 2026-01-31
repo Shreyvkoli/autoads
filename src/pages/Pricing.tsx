@@ -34,7 +34,7 @@ const Pricing = () => {
                                 <div className="space-y-4 mb-8">
                                     {[
                                         "Back banner on auto",
-                                        "QR code inside auto (passenger eye-level)",
+                                        "QR code inside auto",
                                         "2 brand reels",
                                         "Scan & engagement tracking",
                                         "Monthly performance report",
@@ -73,12 +73,15 @@ const Pricing = () => {
 
                                 <div className="space-y-4 mb-8">
                                     {[
-                                        "Everything in Starter",
-                                        "4 brand reels (rotated weekly)",
+                                        "Back banner on auto",
+                                        "QR code inside auto",
+                                        "4 brand reels",
+                                        "Scan & engagement tracking",
                                         "Priority placement across autos",
                                         "Faster verification & support",
                                         "Area-focused deployment strategy",
-                                        "Enhanced performance reporting"
+                                        "Enhanced performance reporting",
+                                        "Installation + verification included"
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-start gap-3">
                                             <div className="mt-1 bg-blue-100 p-1 rounded-full"><Check className="w-3.5 h-3.5 text-blue-700" /></div>
@@ -102,11 +105,11 @@ const Pricing = () => {
                                 </div>
                             </div>
 
-                            {/* QR-Only Package - Purple */}
-                            <div className="bg-white/80 backdrop-blur-md border border-purple-200 rounded-[2rem] p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-700"></div>
+                            {/* QR-Only Package - Orange */}
+                            <div className="bg-white/80 backdrop-blur-md border border-orange-200 rounded-[2rem] p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-700"></div>
                                 <h3 className="text-xl md:text-2xl font-display tracking-wide mb-2 text-foreground">QR-Only Package</h3>
-                                <div className="text-3xl md:text-3xl font-bold text-purple-600 mb-2 font-display">₹1,500 <span className="text-base md:text-lg text-muted-foreground font-sans font-normal">/ month</span></div>
+                                <div className="text-3xl md:text-3xl font-bold text-orange-600 mb-2 font-display">₹1,500 <span className="text-base md:text-lg text-muted-foreground font-sans font-normal">/ month</span></div>
                                 <p className="text-muted-foreground text-sm font-medium mb-8 min-h-[40px]">Best for brands that want digital discovery without physical banners.</p>
 
                                 <div className="space-y-4 mb-8">
@@ -118,7 +121,7 @@ const Pricing = () => {
                                         "Monthly insights report"
                                     ].map((item, i) => (
                                         <div key={i} className="flex items-start gap-3">
-                                            <div className="mt-1 bg-purple-100 p-1 rounded-full"><Check className="w-3.5 h-3.5 text-purple-700" /></div>
+                                            <div className="mt-1 bg-orange-100 p-1 rounded-full"><Check className="w-3.5 h-3.5 text-orange-700" /></div>
                                             <span className="text-sm font-medium text-foreground/80">{item}</span>
                                         </div>
                                     ))}
@@ -130,7 +133,7 @@ const Pricing = () => {
                                         <span className="font-medium text-foreground text-sm">Online brands, new launches, limited budgets</span>
                                     </div>
                                     <div className="mb-0"></div> {/* Spacer */}
-                                    <Button className="w-full rounded-xl bg-purple-600 hover:bg-purple-700 font-bold" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
+                                    <Button className="w-full rounded-xl bg-orange-600 hover:bg-orange-700 font-bold" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
                                         Choose QR-Only
                                     </Button>
                                 </div>
