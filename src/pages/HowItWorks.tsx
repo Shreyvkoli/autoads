@@ -220,10 +220,10 @@ const HowItWorks = () => {
                             </div>
                         </div>
 
-                        <div className="grid md:grid-cols-4 gap-6 mt-16">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-16">
                             {[
                                 {
-                                    icon: <Timer className="w-8 h-8 text-white" />,
+                                    icon: <Timer className="w-6 h-6 md:w-8 md:h-8 text-white" />,
                                     title: "20+ Mins",
                                     subtitle: "Dwell Time",
                                     desc: "Passengers are stuck in traffic with nothing to do but read your ad.",
@@ -232,7 +232,7 @@ const HowItWorks = () => {
                                     border: "border-blue-200"
                                 },
                                 {
-                                    icon: <Ban className="w-8 h-8 text-white" />,
+                                    icon: <Ban className="w-6 h-6 md:w-8 md:h-8 text-white" />,
                                     title: "No Skip",
                                     subtitle: "Forced View",
                                     desc: "Unlike scrolling past ads online, a physical banner cannot be skipped or blocked.",
@@ -241,7 +241,7 @@ const HowItWorks = () => {
                                     border: "border-rose-200"
                                 },
                                 {
-                                    icon: <MapPin className="w-8 h-8 text-white" />,
+                                    icon: <MapPin className="w-6 h-6 md:w-8 md:h-8 text-white" />,
                                     title: "Hyperlocal",
                                     subtitle: "Precision Targeting",
                                     desc: "Target the exact 5km radius where your actual customers live and shop.",
@@ -250,7 +250,7 @@ const HowItWorks = () => {
                                     border: "border-purple-200"
                                 },
                                 {
-                                    icon: <Coins className="w-8 h-8 text-white" />,
+                                    icon: <Coins className="w-6 h-6 md:w-8 md:h-8 text-white" />,
                                     title: "1/10th Cost",
                                     subtitle: "Massive ROI",
                                     desc: "Get city-wide visibility for the price of a single billboard.",
@@ -259,15 +259,15 @@ const HowItWorks = () => {
                                     border: "border-emerald-200"
                                 }
                             ].map((item, i) => (
-                                <div key={i} className={`bg-white p-6 rounded-3xl border ${item.border} relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300`}>
-                                    <div className={`absolute top-0 right-0 w-32 h-32 ${item.color} opacity-5 rounded-full blur-3xl -mr-10 -mt-10 group-hover:opacity-10 transition-opacity`} />
+                                <div key={i} className={`bg-white p-5 md:p-6 rounded-2xl md:rounded-3xl border ${item.border} relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300`}>
+                                    <div className={`absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 ${item.color} opacity-5 rounded-full blur-3xl -mr-6 -mt-6 md:-mr-10 md:-mt-10 group-hover:opacity-10 transition-opacity`} />
 
-                                    <div className={`${item.color} w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg ${item.shadow} group-hover:scale-110 transition-transform duration-300`}>
+                                    <div className={`${item.color} w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg ${item.shadow} group-hover:scale-110 transition-transform duration-300`}>
                                         {item.icon}
                                     </div>
 
-                                    <h3 className="text-3xl font-display text-foreground mb-1">{item.title}</h3>
-                                    <p className="text-xs font-bold text-primary uppercase tracking-wider mb-3">{item.subtitle}</p>
+                                    <h3 className="text-xl md:text-3xl font-display text-foreground mb-1">{item.title}</h3>
+                                    <p className="text-[10px] md:text-xs font-bold text-primary uppercase tracking-wider mb-2 md:mb-3">{item.subtitle}</p>
                                     <p className="text-sm text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
                                 </div>
                             ))}

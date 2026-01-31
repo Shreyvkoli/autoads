@@ -25,10 +25,10 @@ const Pricing = () => {
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                             {/* Starter Package - Green */}
-                            <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-[2rem] p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
+                            <div className="bg-white/80 backdrop-blur-md border border-green-200 rounded-[2rem] p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-700"></div>
-                                <h3 className="text-2xl font-display tracking-wide mb-2 text-foreground">Starter Package</h3>
-                                <div className="text-4xl font-bold text-green-600 mb-2 font-display">₹300 <span className="text-lg text-muted-foreground font-sans font-normal">/ auto / month</span></div>
+                                <h3 className="text-xl md:text-2xl font-display tracking-wide mb-2 text-foreground">Starter Package</h3>
+                                <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2 font-display">₹300 <span className="text-base md:text-lg text-muted-foreground font-sans font-normal">/ auto / month</span></div>
                                 <p className="text-muted-foreground text-sm font-medium mb-8 min-h-[40px]">Best for local businesses starting hyperlocal marketing.</p>
 
                                 <div className="space-y-4 mb-8">
@@ -63,12 +63,12 @@ const Pricing = () => {
                             </div>
 
                             {/* Growth Package - Blue */}
-                            <div className="bg-white/90 backdrop-blur-md border-2 border-blue-500 rounded-[2rem] p-8 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden transform md:-translate-y-4 z-10">
+                            <div className="bg-white/90 backdrop-blur-md border-2 border-blue-500 rounded-[2rem] p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden transform md:-translate-y-4 z-10">
                                 <div className="absolute top-0 inset-x-0 h-2 bg-blue-500"></div>
                                 <div className="absolute top-4 right-4 bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider">Most Popular</div>
 
-                                <h3 className="text-3xl font-display tracking-wide mb-2 text-foreground">Growth Package</h3>
-                                <div className="text-4xl font-bold text-blue-600 mb-2 font-display">₹500 <span className="text-lg text-muted-foreground font-sans font-normal">/ auto / month</span></div>
+                                <h3 className="text-2xl md:text-3xl font-display tracking-wide mb-2 text-foreground">Growth Package</h3>
+                                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2 font-display">₹500 <span className="text-base md:text-lg text-muted-foreground font-sans font-normal">/ auto / month</span></div>
                                 <p className="text-muted-foreground text-sm font-medium mb-8 min-h-[40px]">Best for brands looking for stronger visibility and faster results.</p>
 
                                 <div className="space-y-4 mb-8">
@@ -103,10 +103,10 @@ const Pricing = () => {
                             </div>
 
                             {/* QR-Only Package - Purple */}
-                            <div className="bg-white/80 backdrop-blur-md border border-purple-200 rounded-[2rem] p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
+                            <div className="bg-white/80 backdrop-blur-md border border-purple-200 rounded-[2rem] p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-700"></div>
-                                <h3 className="text-2xl font-display tracking-wide mb-2 text-foreground">QR-Only Package</h3>
-                                <div className="text-3xl font-bold text-purple-600 mb-2 font-display">₹1,000-1,500 <span className="text-lg text-muted-foreground font-sans font-normal">/ month</span></div>
+                                <h3 className="text-xl md:text-2xl font-display tracking-wide mb-2 text-foreground">QR-Only Package</h3>
+                                <div className="text-3xl md:text-3xl font-bold text-purple-600 mb-2 font-display">₹1,500 <span className="text-base md:text-lg text-muted-foreground font-sans font-normal">/ month</span></div>
                                 <p className="text-muted-foreground text-sm font-medium mb-8 min-h-[40px]">Best for brands that want digital discovery without physical banners.</p>
 
                                 <div className="space-y-4 mb-8">

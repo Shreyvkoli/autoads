@@ -60,27 +60,27 @@ const AutoAds = () => {
                             <p className="text-lg text-muted-foreground font-medium">We don’t sell blind advertising. We provide visibility you can trust.</p>
                         </div>
 
-                        <div className="max-w-4xl mx-auto bg-white/70 backdrop-blur-xl rounded-[2rem] p-8 md:p-12 border border-white/40 shadow-card overflow-hidden">
-                            <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                        <div className="max-w-4xl mx-auto bg-white/70 backdrop-blur-xl rounded-[2rem] p-6 md:p-12 border border-white/40 shadow-card overflow-hidden">
+                            <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-4 md:gap-y-6">
                                 {/* Header */}
-                                <div className="pb-4 border-b border-black/5 font-display text-2xl md:text-3xl text-muted-foreground/60 text-center">Normal Auto Ads</div>
-                                <div className="pb-4 border-b border-primary/20 font-display text-2xl md:text-3xl text-primary text-center">Our Auto Ads</div>
+                                <div className="pb-4 border-b border-black/5 font-display text-xl md:text-3xl text-muted-foreground/60 text-center">Normal Auto Ads</div>
+                                <div className="pb-4 border-b border-primary/20 font-display text-xl md:text-3xl text-primary text-center">Our Auto Ads</div>
 
                                 {/* Rows */}
-                                <div className="py-3 px-4 text-base md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">One-time photo</div>
-                                <div className="py-3 px-4 text-base md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Ongoing verification</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">One-time photo</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Ongoing verification</div>
 
-                                <div className="py-3 px-4 text-base md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">No tracking</div>
-                                <div className="py-3 px-4 text-base md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Active auto monitoring</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">No tracking</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Active auto monitoring</div>
 
-                                <div className="py-3 px-4 text-base md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">Driver unmanaged</div>
-                                <div className="py-3 px-4 text-base md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Driver connected</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">Driver unmanaged</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Driver connected</div>
 
-                                <div className="py-3 px-4 text-base md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">Sticker once, forget</div>
-                                <div className="py-3 px-4 text-base md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Continuous control</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">Sticker once, forget</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Continuous control</div>
 
-                                <div className="py-3 px-4 text-base md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">Blind exposure</div>
-                                <div className="py-3 px-4 text-base md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Transparent execution</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-muted-foreground font-medium flex items-center justify-center text-center bg-gray-50/50 rounded-xl">Blind exposure</div>
+                                <div className="py-3 px-3 md:px-4 text-sm md:text-lg text-foreground font-bold flex items-center justify-center text-center bg-primary/10 rounded-xl">Transparent execution</div>
                             </div>
                         </div>
                     </div>
@@ -113,14 +113,14 @@ const AutoAds = () => {
                             ].map((item, index) => (
                                 <div
                                     key={index}
-                                    className="group flex items-center p-6 bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl shadow-sm hover:shadow-xl hover:bg-white/80 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 cursor-default"
+                                    className="group flex items-center p-5 md:p-6 bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl shadow-sm hover:shadow-xl hover:bg-white/80 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 cursor-default"
                                 >
-                                    <div className="flex-shrink-0 mr-6">
-                                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                                            <Check className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
+                                    <div className="flex-shrink-0 mr-4 md:mr-6">
+                                        <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                                            <Check className="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-white transition-colors" />
                                         </div>
                                     </div>
-                                    <span className="text-lg md:text-xl font-medium text-foreground/80 group-hover:text-foreground transition-colors">
+                                    <span className="text-base md:text-xl font-medium text-foreground/80 group-hover:text-foreground transition-colors">
                                         {item}
                                     </span>
                                     <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-4 group-hover:translate-x-0 hidden md:block">
@@ -148,9 +148,9 @@ const AutoAds = () => {
                                 { title: "5. Total Transparency", desc: "Brands don't 'hope' their ads are running. They know." },
                                 { title: "6. Clean Management", desc: "Area-based deployment. Easy scaling. Controlled execution." },
                             ].map((step, index) => (
-                                <div key={index} className="group p-8 rounded-[2rem] bg-white/80 border border-white/40 hover:border-primary/30 hover:bg-white transition-all duration-300 shadow-card hover:shadow-card-hover hover:-translate-y-2">
-                                    <h3 className="text-2xl font-display mb-4 tracking-wide text-primary">{step.title}</h3>
-                                    <p className="text-foreground/80 text-base leading-relaxed font-medium">{step.desc}</p>
+                                <div key={index} className="group p-6 md:p-8 rounded-[2rem] bg-white/80 border border-white/40 hover:border-primary/30 hover:bg-white transition-all duration-300 shadow-card hover:shadow-card-hover hover:-translate-y-2">
+                                    <h3 className="text-xl md:text-2xl font-display mb-4 tracking-wide text-primary">{step.title}</h3>
+                                    <p className="text-foreground/80 text-sm md:text-base leading-relaxed font-medium">{step.desc}</p>
                                 </div>
                             ))}
                         </div>

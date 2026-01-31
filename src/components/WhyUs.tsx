@@ -39,12 +39,12 @@ const WhyUs = () => {
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {reasons.map((reason, index) => (
-                        <div key={index} className="group text-center p-8 rounded-[2rem] bg-white border border-slate-100 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
-                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-primary/20 group-hover:rotate-3 transition-all duration-500 shadow-sm">
-                                <reason.icon className="w-8 h-8 text-primary" />
+                        <div key={index} className="group text-center p-6 md:p-8 rounded-[2rem] bg-white border border-slate-100 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                            <div className="w-14 h-14 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-primary/20 group-hover:rotate-3 transition-all duration-500 shadow-sm">
+                                <reason.icon className="w-7 h-7 md:w-8 md:h-8 text-primary" />
                             </div>
-                            <h3 className="font-display text-2xl mb-4 tracking-wide text-foreground">{reason.title}</h3>
-                            <p className="text-muted-foreground text-base leading-relaxed font-medium">{reason.description}</p>
+                            <h3 className="font-display text-xl md:text-2xl mb-4 tracking-wide text-foreground">{reason.title}</h3>
+                            <p className="text-sm md:text-base text-muted-foreground leading-relaxed font-medium">{reason.description}</p>
                         </div>
                     ))}
                 </div>
