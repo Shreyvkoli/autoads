@@ -50,7 +50,7 @@ const HowItWorks = () => {
     const totalImpressions = monthlyImpressions * duration;
 
     const cpm = (totalCost / (totalImpressions / 1000)).toFixed(2);
-    const estimatedEngagement = Math.floor(totalImpressions * (engagementRate / 100)); // Conservative estimate
+    const estimatedEngagement = Math.floor(totalImpressions * engagementRate); // 5% engagement rate
 
     return (
         <div className="min-h-screen flex flex-col bg-background">
