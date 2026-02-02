@@ -35,18 +35,6 @@ const AutoAds = () => {
                                         className="w-full h-auto rounded-[1.8rem] shadow-2xl transform transition-all duration-700 group-hover:scale-[1.02] group-hover:-rotate-1"
                                     />
                                 </div>
-                                {/* Floating Badge */}
-                                <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-blue-100 animate-bounce duration-3000 hidden md:block">
-                                    <div className="flex items-center gap-3">
-                                        <div className="bg-green-100 p-2 rounded-full">
-                                            <Check className="w-5 h-5 text-green-600" />
-                                        </div>
-                                        <div>
-                                            <p className="text-sm font-bold text-gray-800">Verified Placement</p>
-                                            <p className="text-xs text-gray-500">Live Tracking Enabled</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
