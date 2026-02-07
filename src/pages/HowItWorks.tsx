@@ -11,7 +11,6 @@ import {
     HelpCircle,
     CheckCircle2,
     Calculator,
-    Quote,
     Timer,
     Ban,
     Coins,
@@ -312,40 +311,7 @@ const HowItWorks = () => {
                     </div>
                 </section>
 
-                {/* Testimonials Section */}
-                <section className="py-24 bg-white/50 backdrop-blur-md border-y border-white/20">
-                    <div className="container px-4 max-w-[1200px] mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-display text-center mb-16 tracking-wide text-foreground">WHAT OUR CLIENTS SAY</h2>
-                        <div className="grid md:grid-cols-3 gap-8">
-                            {[
-                                {
-                                    text: "We saw customers mentioning they found us through auto ads. ADZO made local marketing affordable and trackable.",
-                                    author: "Restaurant Owner",
-                                    loc: "Mumbai"
-                                },
-                                {
-                                    text: "The QR scans helped us drive real footfall. It’s much better than flyers or posters.",
-                                    author: "Salon Owner",
-                                    loc: "Andheri"
-                                },
-                                {
-                                    text: "ADZO gave us both street visibility and online engagement in one campaign.",
-                                    author: "Gym Owner",
-                                    loc: "Malad"
-                                }
-                            ].map((testimonial, i) => (
-                                <div key={i} className="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 relative">
-                                    <Quote className="w-10 h-10 text-primary/10 absolute top-6 right-6" />
-                                    <p className="text-lg text-foreground/80 font-medium italic mb-6 leading-relaxed">"{testimonial.text}"</p>
-                                    <div>
-                                        <p className="font-bold text-foreground">{testimonial.author}</p>
-                                        <p className="text-sm text-primary font-medium">{testimonial.loc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+
 
                 {/* Final CTA */}
                 <section className="py-24 relative overflow-hidden">
