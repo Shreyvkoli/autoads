@@ -56,7 +56,7 @@ const Pricing = () => {
                                         <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider block mb-1">Ideal For</span>
                                         <span className="font-medium text-foreground text-sm">Restaurants, salons, gyms, clinics, local stores</span>
                                     </div>
-                                    <Button className="w-full rounded-xl bg-green-600 hover:bg-green-700 font-bold" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
+                                    <Button className="w-full rounded-xl bg-green-600 hover:bg-green-700 font-bold" onClick={() => window.open('https://api.whatsapp.com/send?phone=919167273951', '_blank')}>
                                         Choose Starter
                                     </Button>
                                 </div>
@@ -99,7 +99,7 @@ const Pricing = () => {
                                         <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider block mb-1">Ideal For</span>
                                         <span className="font-medium text-foreground text-sm">Franchises, multi-location brands, aggressive growth campaigns</span>
                                     </div>
-                                    <Button className="w-full h-12 rounded-xl bg-blue-600 hover:bg-blue-700 font-bold text-base shadow-lg shadow-blue-200" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
+                                    <Button className="w-full h-12 rounded-xl bg-blue-600 hover:bg-blue-700 font-bold text-base shadow-lg shadow-blue-200" onClick={() => window.open('https://api.whatsapp.com/send?phone=919167273951', '_blank')}>
                                         Choose Growth
                                     </Button>
                                 </div>
@@ -133,7 +133,7 @@ const Pricing = () => {
                                         <span className="font-medium text-foreground text-sm">Online brands, new launches, limited budgets</span>
                                     </div>
                                     <div className="mb-0"></div> {/* Spacer */}
-                                    <Button className="w-full rounded-xl bg-orange-600 hover:bg-orange-700 font-bold" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
+                                    <Button className="w-full rounded-xl bg-orange-600 hover:bg-orange-700 font-bold" onClick={() => window.open('https://api.whatsapp.com/send?phone=919167273951', '_blank')}>
                                         Choose QR-Only
                                     </Button>
                                 </div>
@@ -200,7 +200,7 @@ const Pricing = () => {
                             Book a free consultation and we’ll build a custom campaign for your brand.
                         </p>
 
-                        <Button size="lg" className="h-16 px-12 rounded-2xl text-xl font-bold shadow-xl hover:scale-105 transition-all" onClick={() => window.open('https://api.whatsapp.com/send?phone=917977568891', '_blank')}>
+                        <Button size="lg" className="h-16 px-12 rounded-2xl text-xl font-bold shadow-xl hover:scale-105 transition-all" onClick={() => window.open('https://api.whatsapp.com/send?phone=919167273951', '_blank')}>
                             Book a Free Consultation
                         </Button>
                     </div>

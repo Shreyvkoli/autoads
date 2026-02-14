@@ -53,21 +53,12 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-xl text-slate-900 mb-8 tracking-wide">Contact Us Anytime</h4>
             <div className="flex flex-col gap-3 mb-4">
-              <a href="https://api.whatsapp.com/send?phone=917977568891" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-white hover:bg-green-50 border border-slate-200 hover:border-green-200 p-4 rounded-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-md cursor-pointer">
+              <a href="https://api.whatsapp.com/send?phone=919167273951" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-white hover:bg-green-50 border border-slate-200 hover:border-green-200 p-4 rounded-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-md cursor-pointer">
                 <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                   <MessageCircle className="w-5 h-5 text-green-600" />
                 </div>
                 <div>
-                  <p className="font-bold text-slate-800 group-hover:text-green-700 transition-colors">+91 79775 68891</p>
-                </div>
-              </a>
-
-              <a href="https://api.whatsapp.com/send?phone=918450912498" target="_blank" rel="noreferrer" className="flex items-center gap-3 bg-white hover:bg-green-50 border border-slate-200 hover:border-green-200 p-4 rounded-xl transition-all duration-300 group hover:-translate-y-1 hover:shadow-md cursor-pointer">
-                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Phone className="w-5 h-5 text-green-600" />
-                </div>
-                <div>
-                  <p className="font-bold text-slate-800 group-hover:text-green-700 transition-colors">+91 84509 12498</p>
+                  <p className="font-bold text-slate-800 group-hover:text-green-700 transition-colors">+91 91672 73951</p>
                 </div>
               </a>
             </div>

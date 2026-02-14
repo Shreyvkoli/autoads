@@ -79,8 +79,7 @@ const AboutContact = () => {
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-foreground">+91 79775 68891</span>
-                    <span className="text-muted-foreground text-sm">+91 84509 12498</span>
+                    <span className="text-foreground">+91 91672 73951</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -94,13 +93,13 @@ const AboutContact = () => {
               {/* Quick Contact Buttons */}
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button asChild variant="cta" size="lg" className="gap-2">
-                  <a href="https://api.whatsapp.com/send?phone=917977568891" target="_blank" rel="noreferrer">
+                  <a href="https://api.whatsapp.com/send?phone=919167273951" target="_blank" rel="noreferrer">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp Us
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="gap-2">
-                  <a href="tel:+917977568891">
+                  <a href="tel:+919167273951">
                     <Phone className="w-5 h-5" />
                     Call Now
                   </a>
