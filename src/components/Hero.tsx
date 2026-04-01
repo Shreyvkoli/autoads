@@ -1,144 +1,135 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Smartphone, MapPin, Timer, Ban, Coins } from "lucide-react";
+import { ArrowRight, MapPin, Timer, Ban, Coins } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import heroAuto from "@/assets/hero-auto.jpg";
 
 const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 pb-16">
-      {/* Professional Abstract Background */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/4" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-50/50 rounded-full blur-[100px] -z-10 -translate-x-1/3 translate-y-1/4" />
+    <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden pt-28 pb-20 bg-[#09090b]">
+      {/* Original Animated Bubble Effect Component (Yellow Theme) */}
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
+        <BackgroundGradientAnimation
+          gradientBackgroundStart="rgb(9, 9, 11)"
+          gradientBackgroundEnd="rgb(9, 9, 11)"
+          firstColor="251, 191, 36"
+          secondColor="217, 119, 6"
+          thirdColor="251, 191, 36"
+          fourthColor="202, 138, 4"
+          fifthColor="253, 224, 71"
+          pointerColor="251, 191, 36"
+          size="100%"
+          blendingValue="screen"
+          interactive={false}
+        />
+      </div>
 
       {/* Content */}
       <div className="container relative z-20 px-4 max-w-[1200px] mx-auto">
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <h1 className="font-display text-5xl md:text-8xl leading-[0.9] mb-8 tracking-tight">
-            <span className="text-black">ADVERTISE</span> <br />
-            <span className="text-gradient font-bold italic">WHERE THE CITY MOVES.</span>
-          </h1>
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20 lg:mb-24">
 
-          <p className="text-xl md:text-2xl text-slate-700 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Dominate the streets with premium <span className="text-black font-medium">Auto Branding</span> and state-of-the-art <span className="text-black font-medium">QR Discovery</span>.
-          </p>
+          {/* Left Text Column */}
+          <div className="text-left animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary font-semibold text-sm mb-6 lg:mb-8 tracking-wide uppercase shadow-[0_0_15px_rgba(251,191,36,0.15)]">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              Premium Hyperlocal Advertising
+            </div>
 
-          {/* Stats Grid - HowItWorks Style */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-20 px-4 md:px-0">
-            {[
-              {
-                icon: <Timer className="w-6 h-6 md:w-8 md:h-8 text-white" />,
-                title: "20+ Mins",
-                subtitle: "Dwell Time",
-                desc: "Passengers are stuck in traffic with nothing to do but read your ad.",
-                color: "bg-blue-500",
-                shadow: "shadow-blue-500/20",
-                border: "border-blue-200"
-              },
-              {
-                icon: <Ban className="w-6 h-6 md:w-8 md:h-8 text-white" />,
-                title: "No Skip",
-                subtitle: "Forced View",
-                desc: "Unlike scrolling past ads online, a physical banner cannot be skipped or blocked.",
-                color: "bg-rose-500",
-                shadow: "shadow-rose-500/20",
-                border: "border-rose-200"
-              },
-              {
-                icon: <MapPin className="w-6 h-6 md:w-8 md:h-8 text-white" />,
-                title: "Hyperlocal",
-                subtitle: "Precision Targeting",
-                desc: "Target the exact 5km radius where your actual customers live and shop.",
-                color: "bg-purple-500",
-                shadow: "shadow-purple-500/20",
-                border: "border-purple-200"
-              },
-              {
-                icon: <Coins className="w-6 h-6 md:w-8 md:h-8 text-white" />,
-                title: "1/10th Cost",
-                subtitle: "Massive ROI",
-                desc: "Get city-wide visibility for the price of a single billboard.",
-                color: "bg-emerald-500",
-                shadow: "shadow-emerald-500/20",
-                border: "border-emerald-200"
-              }
-            ].map((item, i) => (
-              <div key={i} className={`bg-white p-5 md:p-6 rounded-2xl md:rounded-3xl border ${item.border} relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-left`}>
-                <div className={`absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 ${item.color} opacity-5 rounded-full blur-3xl -mr-6 -mt-6 md:-mr-10 md:-mt-10 group-hover:opacity-10 transition-opacity`} />
+            <h1 className="font-display text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.85] mb-6 tracking-tight text-white drop-shadow-lg">
+              DOMINATE THE <br />
+              <span className="text-gradient font-bold italic">STREETS.</span>
+            </h1>
 
-                <div className={`${item.color} w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg ${item.shadow} group-hover:scale-110 transition-transform duration-300`}>
-                  {item.icon}
+            <p className="text-lg md:text-xl text-slate-300 mb-8 lg:mb-10 max-w-lg font-light leading-relaxed">
+              Capture your city's attention with <strong className="text-white font-medium">Auto Branding</strong> and state-of-the-art <strong className="text-white font-medium">QR Discovery</strong>. Unbeatable ROI, targeted precision.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                onClick={() => navigate("/auto-ads")}
+                size="lg"
+                className="h-14 px-8 rounded-xl text-lg font-bold bg-primary text-primary-foreground shadow-[0_0_20px_rgba(251,191,36,0.3)] hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] hover:bg-primary/90 transition-all hover:-translate-y-1"
+              >
+                Start Campaign <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button
+                onClick={() => navigate("/how-it-works")}
+                variant="outline"
+                size="lg"
+                className="h-14 px-8 rounded-xl text-lg font-semibold border-white/20 text-white hover:bg-white/10 transition-all hover:-translate-y-1 backdrop-blur-sm bg-white/5"
+              >
+                How It Works
+              </Button>
+            </div>
+          </div>
+
+          {/* Right Image/Visual Column */}
+          <div className="relative animate-fade-in delay-200 block mt-12 lg:mt-0">
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl glass-card group">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none" />
+
+              <video
+                src="https://videos.pexels.com/video-files/3121459/3121459-uhd_2560_1440_24fps.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-[400px] md:h-[550px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
+              />
+
+              <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 z-20 glass-card bg-black/60 backdrop-blur-md p-3 md:p-4 rounded-xl md:rounded-2xl border border-white/10 flex items-center gap-3 md:gap-4">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-primary" />
                 </div>
-
-                <h3 className="text-xl md:text-3xl font-display text-foreground mb-1">{item.title}</h3>
-                <p className="text-[10px] md:text-xs font-bold text-primary uppercase tracking-wider mb-2 md:mb-3">{item.subtitle}</p>
-                <p className="text-sm text-muted-foreground font-medium leading-relaxed">{item.desc}</p>
+                <div>
+                  <p className="text-white font-display text-2xl tracking-wide">Top Visibility</p>
+                  <p className="text-primary text-xs font-bold uppercase tracking-wider">Hyperlocal Targeting</p>
+                </div>
               </div>
-            ))}
+            </div>
+            <div className="absolute -inset-1 border border-primary/20 rounded-[2rem] -z-10 blur-[2px]" />
           </div>
         </div>
 
-        {/* CTA Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto animate-fade-up delay-200">
-          {/* Auto Advertising Card - Solid White */}
-          <div
-            onClick={() => navigate("/auto-ads")}
-            className="group relative overflow-hidden rounded-[2rem] bg-white border border-slate-200 p-10 cursor-pointer flex flex-col items-center text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
-          >
-            <div className="relative z-10 w-full flex flex-col items-center h-full">
-              <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-500 border border-blue-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-10 h-10 text-blue-600 group-hover:text-white transition-colors duration-300"
-                >
-                  <circle cx="7" cy="17" r="3" />
-                  <circle cx="17" cy="17" r="3" />
-                  <path d="M10 17h4" />
-                  <path d="M20 17h2" />
-                  <path d="M2 17h2" />
-                  <path d="M14 17V8a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v9" />
-                  <path d="M14 8h3l3 5v4" />
-                  <path d="M14 8v9" />
-                </svg>
+        {/* Stats Grid - Dark Premium Style */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-up delay-300">
+          {[
+            {
+              icon: <Timer className="w-6 h-6 md:w-8 md:h-8 text-primary" />,
+              title: "20+ Mins",
+              subtitle: "Dwell Time",
+              desc: "Unavoidable visibility stuck in traffic.",
+            },
+            {
+              icon: <Ban className="w-6 h-6 md:w-8 md:h-8 text-primary" />,
+              title: "No Skip",
+              subtitle: "Forced View",
+              desc: "Physical banners cannot be skipped.",
+            },
+            {
+              icon: <MapPin className="w-6 h-6 md:w-8 md:h-8 text-primary" />,
+              title: "Hyperlocal",
+              subtitle: "Precision Targeting",
+              desc: "Target the exact 5km radius of your customers.",
+            },
+            {
+              icon: <Coins className="w-6 h-6 md:w-8 md:h-8 text-primary" />,
+              title: "1/10th Cost",
+              subtitle: "Massive ROI",
+              desc: "City-wide visibility for less.",
+            }
+          ].map((item, i) => (
+            <div key={i} className="glass-card hover:-translate-y-2 p-6 md:p-8 rounded-3xl group">
+              <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(251,191,36,0.2)] group-hover:scale-110">
+                {item.icon}
               </div>
-
-              <h3 className="font-display text-4xl mb-4 tracking-wide text-slate-900 group-hover:text-blue-700 transition-colors duration-300">Auto Advertising</h3>
-              <p className="text-slate-500 text-lg mb-10 leading-relaxed max-w-sm">
-                Massive reach across Mumbai's most high-traffic transit corridors.
-              </p>
-
-              <Button size="lg" className="mt-auto w-full h-14 rounded-xl text-lg font-semibold bg-slate-900 text-white shadow-lg hover:shadow-xl hover:bg-slate-800 transition-all duration-300">
-                Explore Solutions <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <h3 className="text-3xl font-display text-white mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
+              <p className="text-xs font-bold text-primary tracking-wider uppercase mb-3">{item.subtitle}</p>
+              <p className="text-sm text-slate-400 font-medium leading-relaxed">{item.desc}</p>
             </div>
-          </div>
-
-          {/* QR Deal Marketing Card - Solid White */}
-          <div
-            onClick={() => navigate("/qr-deals")}
-            className="group relative overflow-hidden rounded-[2rem] bg-white border border-slate-200 p-10 cursor-pointer flex flex-col items-center text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
-          >
-            <div className="relative z-10 w-full flex flex-col items-center h-full">
-              <div className="w-20 h-20 bg-indigo-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-indigo-600 group-hover:scale-110 transition-all duration-500 border border-indigo-100">
-                <Smartphone className="w-10 h-10 text-indigo-600 group-hover:text-white transition-colors duration-300" />
-              </div>
-
-              <h3 className="font-display text-4xl mb-4 tracking-wide text-slate-900 group-hover:text-indigo-700 transition-colors duration-300">QR Deal Marketing</h3>
-              <p className="text-slate-500 text-lg mb-10 leading-relaxed max-w-sm">
-                Engagement-first video discovery for the mobile-native generation.
-              </p>
-
-              <Button size="lg" className="mt-auto w-full h-14 rounded-xl text-lg font-semibold bg-slate-900 text-white shadow-lg hover:shadow-xl hover:bg-slate-800 transition-all duration-300">
-                View Deals <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
