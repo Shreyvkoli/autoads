@@ -57,7 +57,7 @@ const HowItWorks = () => {
                 <section className="py-20 relative overflow-hidden text-center bg-transparent">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/25 rounded-full blur-[150px] -z-10 pointer-events-none" />
                     <div className="container px-4 relative z-10 max-w-[1000px] mx-auto">
-                        <h1 className="text-5xl md:text-6xl font-display mb-6 tracking-wide text-white drop-shadow-md">HOW IT <span className="text-primary italic">WORKS</span></h1>
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-display mb-6 tracking-wide text-white drop-shadow-md">HOW IT <span className="text-primary italic">WORKS</span></h1>
                         <p className="text-xl text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
                             From booking to verification in 5 simple steps.
                         </p>

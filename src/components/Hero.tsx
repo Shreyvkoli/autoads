@@ -37,7 +37,7 @@ const Hero = () => {
               Premium Hyperlocal Advertising
             </div>
 
-            <h1 className="font-display text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.85] mb-6 tracking-tight text-white drop-shadow-lg">
+            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1] md:leading-[0.85] mb-6 tracking-tight text-white drop-shadow-lg">
               DOMINATE THE <br />
               <span className="text-gradient font-bold italic">STREETS.</span>
             </h1>

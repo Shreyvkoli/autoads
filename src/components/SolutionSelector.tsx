@@ -40,7 +40,7 @@ const SolutionSelector = () => {
 
             <div className="container relative z-10 max-w-[1200px] mx-auto px-4">
                 <div className="text-center mb-20 animate-fade-up">
-                    <h2 className="font-display text-5xl md:text-6xl mb-6 tracking-wide text-white drop-shadow-sm">Choose Your <span className="text-primary">Solution</span></h2>
+                    <h2 className="font-display text-4xl sm:text-5xl md:text-6xl mb-6 tracking-wide text-white drop-shadow-sm">Choose Your <span className="text-primary">Solution</span></h2>
                     <p className="text-slate-400 text-xl max-w-2xl mx-auto font-medium leading-relaxed">
                         Strategic advertising channels engineered for maximum hyperlocal impact and unbeatable ROI.
                     </p>

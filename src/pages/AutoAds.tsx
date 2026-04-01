@@ -13,10 +13,10 @@ const AutoAds = () => {
                 {/* Hero Section */}
                 <section className="py-12 md:py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/20 rounded-full blur-[120px] -z-10" />
-                    <div className="container px-8 md:px-12 lg:px-20 relative z-10 mx-auto max-w-[1300px]">
+                    <div className="container px-4 sm:px-8 md:px-12 lg:px-20 relative z-10 mx-auto max-w-[1300px]">
                         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                             <div className="text-center lg:text-left pl-4 lg:pl-0">
-                                <h1 className="text-5xl md:text-7xl font-display mb-6 tracking-wide text-white leading-[0.95] drop-shadow-sm">
+                                <h1 className="text-4xl sm:text-5xl md:text-7xl font-display mb-6 tracking-wide text-white leading-[1.1] md:leading-[0.95] drop-shadow-sm">
                                     Auto <br className="hidden lg:block" /> Advertising
                                 </h1>
                                 <p className="text-lg md:text-xl text-slate-400 mb-8 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">

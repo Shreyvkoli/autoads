@@ -14,9 +14,9 @@ const QrDeals = () => {
                 {/* Hero Section */}
                 <section className="py-24 relative overflow-hidden bg-transparent">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/25 rounded-full blur-[150px] -z-10" />
-                    <div className="container px-8 md:px-12 lg:px-20 relative z-10 max-w-[1300px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+                    <div className="container px-4 sm:px-8 md:px-12 lg:px-20 relative z-10 max-w-[1300px] mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                         <div className="text-left pl-4 lg:pl-0 animate-fade-up">
-                            <h1 className="text-5xl md:text-6xl font-display mb-8 tracking-wide text-white leading-tight drop-shadow-md">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display mb-6 md:mb-8 tracking-wide text-white leading-tight drop-shadow-md">
                                 QR Deal <span className="text-primary italic">Marketing</span>
                             </h1>
                             <p className="text-lg md:text-xl text-slate-400 mb-10 font-medium leading-relaxed">
