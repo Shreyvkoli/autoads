@@ -98,7 +98,7 @@ const AutoAds = () => {
                             ].map((item, index) => (
                                 <div
                                     key={index}
-                                    className="group flex items-center p-5 md:p-6 bg-[#111115] border border-white/10 rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(251,191,36,0.1)] hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 cursor-default"
+                                    className="group flex items-center p-4 md:p-6 bg-[#111115] border border-white/10 rounded-xl md:rounded-2xl shadow-lg hover:shadow-[0_0_30px_rgba(251,191,36,0.1)] hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 cursor-default"
                                 >
                                     <div className="flex-shrink-0 mr-4 md:mr-6">
                                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">
@@ -123,7 +123,7 @@ const AutoAds = () => {
                         <h2 className="text-3xl md:text-4xl font-display text-center mb-6 tracking-wide text-white">OUR ADVERTISING MODEL</h2>
                         <p className="text-lg text-slate-400 text-center max-w-2xl mx-auto mb-16 font-medium">Everything we do is designed for verification and impact.</p>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
                             {[
                                 { title: "1. Verified Network", desc: "Every auto driver is digitally onboarded. No random autos. No fake placements." },
                                 { title: "2. Automated Engagement", desc: "Drivers stay connected through automated communication. No manual chasing." },
@@ -132,7 +132,7 @@ const AutoAds = () => {
                                 { title: "5. Total Transparency", desc: "Brands don't 'hope' their ads are running. They know." },
                                 { title: "6. Clean Management", desc: "Area-based deployment. Easy scaling. Controlled execution." },
                             ].map((step, index) => (
-                                <div key={index} className="group p-6 md:p-8 rounded-[2rem] bg-black/40 border border-white/10 hover:border-primary/30 transition-all duration-300 shadow-xl hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(251,191,36,0.1)]">
+                                <div key={index} className="group p-5 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] bg-black/40 border border-white/10 hover:border-primary/30 transition-all duration-300 shadow-xl hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(251,191,36,0.1)]">
                                     <h3 className="text-xl md:text-2xl font-display mb-4 tracking-wide text-primary">{step.title}</h3>
                                     <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium">{step.desc}</p>
                                 </div>

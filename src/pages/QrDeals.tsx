@@ -26,11 +26,13 @@ const QrDeals = () => {
                         <div className="flex justify-center lg:justify-end pr-4 lg:pr-0 animate-fade-in delay-200">
                             <div className="relative group">
                                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/40 to-yellow-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
-                                <img
-                                    src={adzoQrCode}
-                                    alt="Adzo QR Code"
-                                    className="relative w-[280px] md:w-[320px] h-auto rounded-[1.5rem] shadow-[0_0_40px_rgba(0,0,0,0.8)] border border-white/20"
-                                />
+                                <a href="https://qr-insta.vercel.app/malad" target="_blank" rel="noopener noreferrer" className="block relative">
+                                    <img
+                                        src={adzoQrCode}
+                                        alt="Adzo QR Code"
+                                        className="relative w-[280px] md:w-[320px] h-auto rounded-[1.5rem] shadow-[0_0_40px_rgba(0,0,0,0.8)] border border-white/20 transition-transform hover:scale-105"
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +92,7 @@ const QrDeals = () => {
                 <section className="py-24 bg-[#09090b]">
                     <div className="container px-4 max-w-[1200px] mx-auto">
                         <h2 className="text-3xl md:text-4xl font-display text-center mb-16 tracking-wide text-white">WHO SHOULD USE <span className="text-primary">THIS</span></h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
                             {[
                                 {
                                     icon: "🍽️",
@@ -138,7 +140,7 @@ const QrDeals = () => {
                                     items: ["Event Planners", "Photography Studios", "Gaming Cafes", "Travel & Local Experiences"]
                                 }
                             ].map((category, index) => (
-                                <div key={index} className="bg-[#111115] backdrop-blur-xl p-8 rounded-[2rem] border border-white/10 hover:border-primary/40 transition-all duration-300 shadow-xl hover:-translate-y-2 group">
+                                <div key={index} className="bg-[#111115] backdrop-blur-xl p-5 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border border-white/10 hover:border-primary/40 transition-all duration-300 shadow-xl hover:-translate-y-2 group">
                                     <div className="flex items-center gap-4 mb-6 p-4 bg-white/5 border border-white/5 rounded-2xl w-fit group-hover:bg-primary/10 group-hover:border-primary/20 transition-colors">
                                         <span className="text-3xl drop-shadow-sm">{category.icon}</span>
                                         <h3 className="font-display text-xl tracking-wide leading-tight text-white">{category.title}</h3>

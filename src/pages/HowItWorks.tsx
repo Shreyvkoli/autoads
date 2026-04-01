@@ -67,7 +67,7 @@ const HowItWorks = () => {
                 {/* Steps Section */}
                 <section className="py-16">
                     <div className="container px-4 max-w-[1200px] mx-auto">
-                        <div className="grid md:grid-cols-5 gap-8 items-start relative">
+                        <div className="grid gap-10 sm:gap-12 md:grid-cols-5 md:gap-8 items-start relative">
                             {/* Connecting Line (Desktop) */}
                             <div className="hidden md:block absolute top-[48px] left-10 right-10 h-0.5 bg-white/10 -z-10"></div>
 
@@ -124,7 +124,7 @@ const HowItWorks = () => {
                             <p className="text-lg text-slate-400 font-medium">Calculate how affordable hyperlocal dominance can be.</p>
                         </div>
 
-                        <div className="bg-[#09090b] rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-white/10 grid lg:grid-cols-2 gap-12 lg:gap-16">
+                        <div className="bg-[#09090b] rounded-[1.5rem] sm:rounded-[2.5rem] p-6 sm:p-8 md:p-12 shadow-2xl border border-white/10 grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
                             {/* Inputs */}
                             <div className="space-y-10">
                                 <div>
@@ -219,7 +219,7 @@ const HowItWorks = () => {
                         </div>
 
                         {/* Features grid below calculator */}
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-12 md:mt-20">
                             {[
                                 {
                                     icon: <Timer className="w-6 h-6 md:w-8 md:h-8 text-white" />,
@@ -250,16 +250,16 @@ const HowItWorks = () => {
                                     color: "bg-emerald-500",
                                 }
                             ].map((item, i) => (
-                                <div key={i} className={`bg-[#09090b] p-5 md:p-6 rounded-[1.5rem] md:rounded-3xl border border-white/10 relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 transition-all duration-300`}>
+                                <div key={i} className={`bg-[#09090b] p-4 sm:p-5 md:p-6 rounded-[1.2rem] md:rounded-3xl border border-white/10 relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 transition-all duration-300`}>
                                     <div className={`absolute top-0 right-0 w-32 h-32 ${item.color} opacity-10 rounded-full blur-[40px] -mr-10 -mt-10 group-hover:opacity-20 transition-opacity`} />
 
-                                    <div className={`${item.color} w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                                    <div className={`${item.color} w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                                         {item.icon}
                                     </div>
 
-                                    <h3 className="text-2xl font-display text-white mb-2">{item.title}</h3>
-                                    <p className="text-[10px] md:text-xs font-bold ${item.color.replace('bg-', 'text-')} uppercase tracking-wider mb-3 text-slate-400">{item.subtitle}</p>
-                                    <p className="text-sm text-slate-500 font-medium leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl sm:text-2xl font-display text-white mb-2 leading-tight">{item.title}</h3>
+                                    <p className={`text-[10px] sm:text-xs font-bold ${item.color.replace('bg-', 'text-')} uppercase tracking-wider mb-2 sm:mb-3`}>{item.subtitle}</p>
+                                    <p className="text-xs sm:text-sm text-slate-500 font-medium leading-snug sm:leading-relaxed line-clamp-3 md:line-clamp-none">{item.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -289,11 +289,11 @@ const HowItWorks = () => {
                                     { q: "Do you create the reels for us?", a: "Yes. Our creative team handles the reel creation optimized for auto-travel context (short, engaging, no-sound proof)." },
                                     { q: "Are there any hidden charges?", a: "None. Our pricing covers printing, installation, mounting, tracking, and reporting. Everything is transparent." }
                                 ].map((item, i) => (
-                                    <AccordionItem key={i} value={`item-${i}`} className="bg-[#111115] border border-white/5 px-6 rounded-2xl data-[state=open]:bg-white/5 data-[state=open]:border-primary/30 transition-all duration-300">
-                                        <AccordionTrigger className="text-lg md:text-xl font-bold font-sans text-white hover:no-underline py-6 text-left hover:text-primary transition-colors">
+                                    <AccordionItem key={i} value={`item-${i}`} className="bg-[#111115] border border-white/5 px-4 sm:px-6 rounded-[1rem] sm:rounded-2xl data-[state=open]:bg-white/5 data-[state=open]:border-primary/30 transition-all duration-300">
+                                        <AccordionTrigger className="text-base sm:text-lg md:text-xl font-bold font-sans text-white hover:no-underline py-5 sm:py-6 text-left hover:text-primary transition-colors">
                                             {item.q}
                                         </AccordionTrigger>
-                                        <AccordionContent className="text-slate-400 text-base pb-6 font-medium leading-relaxed">
+                                        <AccordionContent className="text-slate-400 text-sm sm:text-base pb-5 sm:pb-6 font-medium leading-snug sm:leading-relaxed">
                                             {item.a}
                                         </AccordionContent>
                                     </AccordionItem>
