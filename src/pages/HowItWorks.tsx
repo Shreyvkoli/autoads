@@ -99,8 +99,8 @@ const HowItWorks = () => {
                                 }
                             ].map((step, index) => (
                                 <div key={index} className="flex flex-col items-center text-center group">
-                                    <div className="w-24 h-24 bg-[#111115] rounded-3xl flex items-center justify-center shadow-lg border border-white/10 mb-6 group-hover:bg-primary group-hover:-translate-y-2 group-hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-300">
-                                        <div className="bg-white/5 p-4 rounded-2xl group-hover:bg-black/10 transition-colors">
+                                    <div className="w-20 h-20 md:w-24 md:h-24 bg-[#111115] rounded-[1.5rem] md:rounded-3xl flex items-center justify-center shadow-lg border border-white/10 mb-5 md:mb-6 group-hover:bg-primary group-hover:-translate-y-2 group-hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-300">
+                                        <div className="bg-white/5 p-3 md:p-4 rounded-xl md:rounded-2xl group-hover:bg-black/10 transition-colors">
                                             {step.icon}
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@ const HowItWorks = () => {
                                     color: "bg-emerald-500",
                                 }
                             ].map((item, i) => (
-                                <div key={i} className={`bg-[#09090b] p-6 rounded-3xl border border-white/10 relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 transition-all duration-300`}>
+                                <div key={i} className={`bg-[#09090b] p-5 md:p-6 rounded-[1.5rem] md:rounded-3xl border border-white/10 relative overflow-hidden group hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 transition-all duration-300`}>
                                     <div className={`absolute top-0 right-0 w-32 h-32 ${item.color} opacity-10 rounded-full blur-[40px] -mr-10 -mt-10 group-hover:opacity-20 transition-opacity`} />
 
                                     <div className={`${item.color} w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>

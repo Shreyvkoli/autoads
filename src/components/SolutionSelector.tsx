@@ -50,21 +50,21 @@ const SolutionSelector = () => {
                     {solutions.map((solution, index) => (
                         <div
                             key={index}
-                            className="group relative bg-[#111115] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(251,191,36,0.15)] hover:border-primary/30 flex flex-col"
+                            className="group relative bg-[#111115] rounded-[1.8rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(251,191,36,0.15)] hover:border-primary/30 flex flex-col"
                         >
                             <div className="h-48 md:h-64 relative overflow-hidden w-full">
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#111115] to-transparent z-10" />
                                 <img src={solution.image} alt={solution.title} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
                             </div>
 
-                            <div className="p-8 md:p-10 pt-4 flex-grow flex flex-col relative z-20">
-                                <h3 className="font-display text-4xl mb-8 tracking-wide text-white group-hover:text-primary transition-colors">{solution.title}</h3>
+                            <div className="p-6 md:p-10 pt-4 md:pt-4 flex-grow flex flex-col relative z-20">
+                                <h3 className="font-display text-3xl md:text-4xl mb-6 md:mb-8 tracking-wide text-white group-hover:text-primary transition-colors">{solution.title}</h3>
 
                                 <ul className="space-y-5 mb-10 flex-grow">
                                     {solution.features.map((feature, i) => (
                                         <li key={i} className="flex items-center gap-4 text-base lg:text-lg">
-                                            <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 group-hover:border-primary/30 transition-all duration-300">
-                                                <Check className="w-4 h-4 text-primary" />
+                                            <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 group-hover:border-primary/30 transition-all duration-300">
+                                                <Check className="w-3 h-3 md:w-4 md:h-4 text-primary" />
                                             </div>
                                             <span className="text-slate-300 font-medium">{feature}</span>
                                         </li>

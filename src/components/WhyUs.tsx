@@ -40,11 +40,11 @@ const WhyUs = () => {
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {reasons.map((reason, index) => (
-                        <div key={index} className="glass-card group text-center p-6 md:p-8 rounded-[2rem] hover:shadow-[0_0_30px_rgba(251,191,36,0.1)] transition-all duration-500 hover:-translate-y-2">
-                            <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/30 group-hover:-rotate-3 transition-all duration-500 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                                <reason.icon className="w-8 h-8 text-primary" />
+                        <div key={index} className="glass-card group text-center p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] hover:shadow-[0_0_30px_rgba(251,191,36,0.1)] transition-all duration-500 hover:-translate-y-2">
+                            <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/30 group-hover:-rotate-3 transition-all duration-500 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
+                                <reason.icon className="w-6 h-6 md:w-8 md:h-8 text-primary" />
                             </div>
-                            <h3 className="font-display text-2xl md:text-3xl mb-4 tracking-wide text-white group-hover:text-primary transition-colors">{reason.title}</h3>
+                            <h3 className="font-display text-xl md:text-3xl mb-3 md:mb-4 tracking-wide text-white group-hover:text-primary transition-colors">{reason.title}</h3>
                             <p className="text-sm md:text-base text-slate-400 leading-relaxed font-medium">{reason.description}</p>
                         </div>
                     ))}

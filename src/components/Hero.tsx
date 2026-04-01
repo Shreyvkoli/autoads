@@ -121,11 +121,11 @@ const Hero = () => {
               desc: "City-wide visibility for less.",
             }
           ].map((item, i) => (
-            <div key={i} className="glass-card hover:-translate-y-2 p-6 md:p-8 rounded-3xl group">
-              <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(251,191,36,0.2)] group-hover:scale-110">
+            <div key={i} className="glass-card hover:-translate-y-2 p-5 md:p-8 rounded-[1.5rem] md:rounded-3xl group">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(251,191,36,0.2)] group-hover:scale-110">
                 {item.icon}
               </div>
-              <h3 className="text-3xl font-display text-white mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
+              <h3 className="text-2xl md:text-3xl font-display text-white mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
               <p className="text-xs font-bold text-primary tracking-wider uppercase mb-3">{item.subtitle}</p>
               <p className="text-sm text-slate-400 font-medium leading-relaxed">{item.desc}</p>
             </div>
