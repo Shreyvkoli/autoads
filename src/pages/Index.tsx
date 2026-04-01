@@ -5,6 +5,7 @@ import WhyUs from "@/components/WhyUs";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import AdGallery from "@/components/AdGallery";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <Navbar />
       <main className="relative z-10">
         <Hero />
+        <AdGallery />
         <SolutionSelector />
         <WhyUs />
       </main>

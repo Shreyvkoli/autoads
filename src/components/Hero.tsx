@@ -94,7 +94,7 @@ const Hero = () => {
         </div>
 
         {/* Stats Grid - Dark Premium Style */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-up delay-300">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 animate-fade-up delay-300 mt-6 md:mt-0">
           {[
             {
               icon: <Timer className="w-6 h-6 md:w-8 md:h-8 text-primary" />,
@@ -121,13 +121,13 @@ const Hero = () => {
               desc: "City-wide visibility for less.",
             }
           ].map((item, i) => (
-            <div key={i} className="glass-card hover:-translate-y-2 p-5 md:p-8 rounded-[1.5rem] md:rounded-3xl group">
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(251,191,36,0.2)] group-hover:scale-110">
+            <div key={i} className="glass-card hover:-translate-y-2 p-4 sm:p-5 md:p-8 rounded-[1.2rem] md:rounded-3xl group">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl flex items-center justify-center mb-3 md:mb-6 group-hover:bg-primary/10 group-hover:border-primary/30 transition-all duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(251,191,36,0.2)] group-hover:scale-110">
                 {item.icon}
               </div>
-              <h3 className="text-2xl md:text-3xl font-display text-white mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
-              <p className="text-xs font-bold text-primary tracking-wider uppercase mb-3">{item.subtitle}</p>
-              <p className="text-sm text-slate-400 font-medium leading-relaxed">{item.desc}</p>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-display text-white mb-1.5 md:mb-2 group-hover:text-primary transition-colors leading-tight">{item.title}</h3>
+              <p className="text-[10px] sm:text-xs font-bold text-primary tracking-wider uppercase mb-2 md:mb-3">{item.subtitle}</p>
+              <p className="text-xs sm:text-sm text-slate-400 font-medium leading-snug md:leading-relaxed line-clamp-2 md:line-clamp-none">{item.desc}</p>
             </div>
           ))}
         </div>

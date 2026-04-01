@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import autoAdRearView from "@/assets/auto-ad-rear-view.jpg";
-import qrDealMockup from "@/assets/qr-deal-mockup.jpg";
+import precisionTarget from "@/assets/precision-target.jpg";
+import autoDriverQrGlow from "@/assets/auto-driver-qr-glow.png";
 
 const SolutionSelector = () => {
     const navigate = useNavigate();
@@ -18,7 +18,7 @@ const SolutionSelector = () => {
             ],
             cta: "Explore Campaigns",
             link: "/auto-ads",
-            image: autoAdRearView
+            image: precisionTarget
         },
         {
             title: "QR Deal Marketing",
@@ -30,7 +30,7 @@ const SolutionSelector = () => {
             ],
             cta: "View Platform",
             link: "/qr-deals",
-            image: qrDealMockup
+            image: autoDriverQrGlow
         }
     ];
 
@@ -52,9 +52,9 @@ const SolutionSelector = () => {
                             key={index}
                             className="group relative bg-[#111115] rounded-[1.8rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(251,191,36,0.15)] hover:border-primary/30 flex flex-col"
                         >
-                            <div className="h-48 md:h-64 relative overflow-hidden w-full">
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#111115] to-transparent z-10" />
-                                <img src={solution.image} alt={solution.title} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
+                            <div className="h-64 md:h-80 lg:h-[350px] relative overflow-hidden w-full bg-[#0a0a0c]">
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#111115] via-transparent to-transparent z-10" />
+                                <img src={solution.image} alt={solution.title} className="w-full h-full object-contain object-bottom group-hover:scale-[1.03] transition-transform duration-700" />
                             </div>
 
                             <div className="p-6 md:p-10 pt-4 md:pt-4 flex-grow flex flex-col relative z-20">
