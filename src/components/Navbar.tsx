@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="container px-4 max-w-[1200px] mx-auto h-16 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-3 group">
                     <div className="group-hover:scale-105 transition-transform duration-300">
-                        <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain" />
+                        <img src="/adzo-logo.png" alt="ADZO" className="h-14 md:h-16 w-auto object-contain" />
                     </div>
                 </Link>
 
@@ -51,9 +51,7 @@ const Navbar = () => {
                 <div className="fixed inset-0 z-[100] bg-[#0A0A0A] h-screen w-screen flex flex-col p-6 animate-in slide-in-from-right duration-300">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center gap-3">
-                            <div>
-                                <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain" />
-                            </div>
+                            <img src="/adzo-logo.png" alt="ADZO" className="h-14 md:h-16 w-auto object-contain" />
                         </div>
                         <button onClick={() => setIsOpen(false)} className="p-2 bg-white/5 rounded-full text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
                             <X className="w-6 h-6" />

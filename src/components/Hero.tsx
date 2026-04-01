@@ -31,8 +31,8 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20 lg:mb-24">
 
           {/* Left Text Column */}
-          <div className="text-left animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary font-semibold text-sm mb-6 lg:mb-8 tracking-wide uppercase shadow-[0_0_15px_rgba(251,191,36,0.15)]">
+          <div className="text-center animate-fade-up flex flex-col items-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary font-semibold text-sm mb-6 lg:mb-8 tracking-wide uppercase shadow-[0_0_15px_rgba(251,191,36,0.15)] mx-auto">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               Premium Hyperlocal Advertising
             </div>
@@ -42,11 +42,11 @@ const Hero = () => {
               <span className="text-gradient font-bold italic">STREETS.</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-300 mb-8 lg:mb-10 max-w-lg font-light leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-300 mb-8 lg:mb-10 max-w-lg font-light leading-relaxed mx-auto text-center">
               Capture your city's attention with <strong className="text-white font-medium">Auto Branding</strong> and state-of-the-art <strong className="text-white font-medium">QR Discovery</strong>. Unbeatable ROI, targeted precision.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={() => navigate("/auto-ads")}
                 size="lg"

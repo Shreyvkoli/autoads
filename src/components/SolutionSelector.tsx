@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import precisionTarget from "@/assets/precision-target.jpg";
+import nightAutos from "@/assets/night-autos.png";
 import autoDriverQrGlow from "@/assets/auto-driver-qr-glow.png";
 
 const SolutionSelector = () => {
@@ -18,7 +18,7 @@ const SolutionSelector = () => {
             ],
             cta: "Explore Campaigns",
             link: "/auto-ads",
-            image: precisionTarget
+            image: nightAutos
         },
         {
             title: "QR Deal Marketing",
