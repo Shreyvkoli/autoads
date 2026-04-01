@@ -25,8 +25,8 @@ const QrDeals = () => {
                         </div>
                         <div className="flex justify-center lg:justify-end pr-4 lg:pr-0 animate-fade-in delay-200">
                             <div className="relative group">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/40 to-yellow-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
-                                <a href="https://qr-insta.vercel.app/malad" target="_blank" rel="noopener noreferrer" className="block relative">
+                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/40 to-yellow-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 pointer-events-none"></div>
+                                <a href="https://qr-insta.vercel.app/malad" target="_blank" rel="noopener noreferrer" className="block relative z-20 cursor-pointer">
                                     <img
                                         src={adzoQrCode}
                                         alt="Adzo QR Code"
