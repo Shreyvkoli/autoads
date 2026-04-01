@@ -71,7 +71,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none" />
 
               <video
-                src="https://videos.pexels.com/video-files/3121459/3121459-uhd_2560_1440_24fps.mp4"
+                src="/IMG_7614.MP4"
                 autoPlay
                 loop
                 muted
