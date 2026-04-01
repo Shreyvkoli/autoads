@@ -16,8 +16,8 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10 shadow-sm transition-all duration-300">
             <div className="container px-4 max-w-[1200px] mx-auto h-16 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-3 group">
-                    <div className="bg-white rounded-lg px-2 py-1 border border-white/20 shadow-md group-hover:scale-105 transition-transform duration-300">
-                        <img src="/adzo-logo.png" alt="ADZO" className="h-8 w-auto object-contain" />
+                    <div className="group-hover:scale-105 transition-transform duration-300">
+                        <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain" />
                     </div>
                 </Link>
 
@@ -51,8 +51,8 @@ const Navbar = () => {
                 <div className="fixed inset-0 z-[100] bg-[#0A0A0A] h-screen w-screen flex flex-col p-6 animate-in slide-in-from-right duration-300">
                     <div className="flex justify-between items-center mb-12">
                         <div className="flex items-center gap-3">
-                            <div className="bg-white px-2 py-1 rounded-lg border border-white/20 shadow-md">
-                                <img src="/adzo-logo.png" alt="ADZO" className="h-8 w-auto object-contain" />
+                            <div>
+                                <img src="/adzo-logo.png" alt="ADZO" className="h-10 w-auto object-contain" />
                             </div>
                         </div>
                         <button onClick={() => setIsOpen(false)} className="p-2 bg-white/5 rounded-full text-slate-300 hover:bg-white/10 hover:text-white transition-colors">
