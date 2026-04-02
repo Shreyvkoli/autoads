@@ -1,13 +1,15 @@
-import daytimeAuto from "@/assets/daytime-auto.png";
-import nightAutos from "@/assets/night-autos.png";
-import autoDriverQrGlow from "@/assets/auto-driver-qr-glow.png";
-import autoDriverQrColor from "@/assets/auto-driver-qr-color.png";
+import dynamicAd1 from "@/assets/dynamic-ad-1.jpeg";
+import dynamicAd2 from "@/assets/dynamic-ad-2.jpeg";
+import dynamicAd3 from "@/assets/dynamic-ad-3.png";
+import dynamicAd4 from "@/assets/dynamic-ad-4.png";
+import dynamicAd5 from "@/assets/dynamic-ad-5.png";
 
 const images = [
-    { src: daytimeAuto, alt: 'Daytime Auto Rickshaw Ad' },
-    { src: nightAutos, alt: 'Night-time Auto Rickshaw Glow Ad' },
-    { src: autoDriverQrGlow, alt: 'Auto Rickshaw Interior Glow QR' },
-    { src: autoDriverQrColor, alt: 'Auto Rickshaw Interior Colour QR' },
+    { src: dynamicAd1, alt: 'Bad Boy Pizza Ad' },
+    { src: dynamicAd2, alt: 'Good Flippim Burgers Ad' },
+    { src: dynamicAd3, alt: 'McDonalds Ad' },
+    { src: dynamicAd4, alt: 'Adzo Akhand Ad' },
+    { src: dynamicAd5, alt: 'To The Core Fitness Ad' },
 ];
 
 const AdGallery = () => {
