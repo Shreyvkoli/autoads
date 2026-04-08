@@ -5,11 +5,11 @@ import dynamicAd4 from "@/assets/dynamic-ad-4.png";
 import dynamicAd5 from "@/assets/dynamic-ad-5.png";
 
 const images = [
-    { src: dynamicAd1, alt: 'Bad Boy Pizza Ad' },
-    { src: dynamicAd2, alt: 'Good Flippim Burgers Ad' },
-    { src: dynamicAd3, alt: 'McDonalds Ad' },
-    { src: dynamicAd4, alt: 'Adzo Akhand Ad' },
-    { src: dynamicAd5, alt: 'To The Core Fitness Ad' },
+    { src: dynamicAd1, alt: 'Bad Boy Pizza Ad', styleClass: 'object-cover' },
+    { src: dynamicAd2, alt: 'Good Flippim Burgers Ad', styleClass: 'object-cover' },
+    { src: dynamicAd3, alt: 'McDonalds Ad', styleClass: 'object-cover' },
+    { src: dynamicAd4, alt: 'Adzo Akhand Ad', styleClass: 'object-contain p-2' },
+    { src: dynamicAd5, alt: 'To The Core Fitness Ad', styleClass: 'object-cover' },
 ];
 
 const AdGallery = () => {
@@ -31,7 +31,7 @@ const AdGallery = () => {
                             <div key={index} className="w-[280px] sm:w-[400px] flex-shrink-0 group overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] border border-white/10 shadow-2xl glass-card relative cursor-pointer">
                                 <div className="h-[220px] sm:h-[300px] w-full relative">
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <img src={item.src} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                    <img src={item.src} alt={item.alt} className={`w-full h-full ${item.styleClass} group-hover:scale-110 transition-transform duration-700`} />
                                 </div>
                             </div>
                         ))}
@@ -42,7 +42,7 @@ const AdGallery = () => {
                             <div key={`dup-${index}`} className="w-[280px] sm:w-[400px] flex-shrink-0 group overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] border border-white/10 shadow-2xl glass-card relative cursor-pointer">
                                 <div className="h-[220px] sm:h-[300px] w-full relative">
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                    <img src={item.src} alt={item.alt} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                    <img src={item.src} alt={item.alt} className={`w-full h-full ${item.styleClass} group-hover:scale-110 transition-transform duration-700`} />
                                 </div>
                             </div>
                         ))}
